@@ -2562,6 +2562,162 @@
         "h": 242
     },
     {
+        "id": "f7ef02f3851523e9",
+        "type": "group",
+        "z": "9aa1d42ce5cdb76e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "300f0735525d0102",
+            "d28fcd585276f2b8",
+            "40046e3c0a327112",
+            "ace7471c4689165d",
+            "c1fd7ca5c1059b98",
+            "13ae6a3488364edd",
+            "f7c03cbde7e9de62",
+            "dea58bb02269e322",
+            "38832f08c1637657",
+            "0492af91be18dbf5",
+            "cabc3fb676e73b38"
+        ],
+        "x": 694,
+        "y": 419,
+        "w": 622,
+        "h": 222
+    },
+    {
+        "id": "25940c79a0fbf181",
+        "type": "group",
+        "z": "9aa1d42ce5cdb76e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "8f8fa30ef736679c",
+            "11b1fb0b3f0c08b9",
+            "75ad4d90b1a97b9c",
+            "eb56b1f2bff50aa7",
+            "05ee1cee1d2cdd54"
+        ],
+        "x": 694,
+        "y": 239,
+        "w": 392,
+        "h": 162
+    },
+    {
+        "id": "8450c1640aca6f9e",
+        "type": "group",
+        "z": "9aa1d42ce5cdb76e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "4a16563387a4c014",
+            "0530435dac1f862a"
+        ],
+        "x": 644,
+        "y": 59,
+        "w": 392,
+        "h": 122
+    },
+    {
+        "id": "3f51e2232f060f3b",
+        "type": "group",
+        "z": "9aa1d42ce5cdb76e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "677fb756cbb4360f",
+            "e725dacd17f2954a",
+            "feeb53a74fc7c359"
+        ],
+        "x": 104,
+        "y": 59,
+        "w": 452,
+        "h": 162
+    },
+    {
+        "id": "5bac03d3d742ca0e",
+        "type": "group",
+        "z": "9aa1d42ce5cdb76e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "036b5f87f876e931",
+            "a6b1bd7694b9c9ac",
+            "a1b54857a0c26621",
+            "e388909407d1e446",
+            "9f164c2dd989dd6f",
+            "f2ed2c1dfc657cca",
+            "7d191762d10b25c3",
+            "99b985c6d10e4c57",
+            "3abd9b2b0fd9f9ed",
+            "5115041e2d80cee4",
+            "3dd6eba0d907050e",
+            "a3b93925ea64a640"
+        ],
+        "x": 94,
+        "y": 239,
+        "w": 552,
+        "h": 322
+    },
+    {
+        "id": "313d8117d0ee9774",
+        "type": "group",
+        "z": "9aa1d42ce5cdb76e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "71cd7e9d4614bc4b",
+            "2919c812e437c739",
+            "b70c68b8740b96fc"
+        ],
+        "x": 94,
+        "y": 599,
+        "w": 572,
+        "h": 162
+    },
+    {
         "id": "d7e901b6cb4bab1b",
         "type": "junction",
         "z": "60de16a0fefb7ace",
@@ -4610,6 +4766,7 @@
         "id": "677fb756cbb4360f",
         "type": "subflow:85e13a6e48f6a1c3",
         "z": "9aa1d42ce5cdb76e",
+        "g": "3f51e2232f060f3b",
         "name": "",
         "x": 200,
         "y": 140,
@@ -4621,6 +4778,7 @@
         "id": "e725dacd17f2954a",
         "type": "subflow:65d5e45697fed99a",
         "z": "9aa1d42ce5cdb76e",
+        "g": "3f51e2232f060f3b",
         "name": "",
         "x": 200,
         "y": 180,
@@ -4630,9 +4788,10 @@
         "id": "036b5f87f876e931",
         "type": "subflow:7062e6f741533eb2",
         "z": "9aa1d42ce5cdb76e",
+        "g": "5bac03d3d742ca0e",
         "name": "",
-        "x": 180,
-        "y": 320,
+        "x": 170,
+        "y": 360,
         "wires": [
             []
         ]
@@ -4641,9 +4800,10 @@
         "id": "a6b1bd7694b9c9ac",
         "type": "subflow:d0a39641213352a7",
         "z": "9aa1d42ce5cdb76e",
+        "g": "5bac03d3d742ca0e",
         "name": "",
-        "x": 180,
-        "y": 280,
+        "x": 170,
+        "y": 320,
         "wires": [
             []
         ]
@@ -4652,9 +4812,10 @@
         "id": "a1b54857a0c26621",
         "type": "subflow:b30b4cf6837f20a7",
         "z": "9aa1d42ce5cdb76e",
+        "g": "5bac03d3d742ca0e",
         "name": "",
-        "x": 190,
-        "y": 360,
+        "x": 180,
+        "y": 400,
         "wires": [
             []
         ]
@@ -4663,9 +4824,10 @@
         "id": "e388909407d1e446",
         "type": "subflow:da6577bfc4038dbb",
         "z": "9aa1d42ce5cdb76e",
+        "g": "5bac03d3d742ca0e",
         "name": "",
-        "x": 190,
-        "y": 400,
+        "x": 180,
+        "y": 440,
         "wires": [
             []
         ]
@@ -4674,9 +4836,10 @@
         "id": "9f164c2dd989dd6f",
         "type": "subflow:a9570576c6d79609",
         "z": "9aa1d42ce5cdb76e",
+        "g": "5bac03d3d742ca0e",
         "name": "",
-        "x": 400,
-        "y": 280,
+        "x": 390,
+        "y": 320,
         "wires": [
             []
         ]
@@ -4685,17 +4848,7 @@
         "id": "f2ed2c1dfc657cca",
         "type": "subflow:5904ee94d99998b2",
         "z": "9aa1d42ce5cdb76e",
-        "name": "",
-        "x": 410,
-        "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7d191762d10b25c3",
-        "type": "subflow:60de16a0fefb7ace",
-        "z": "9aa1d42ce5cdb76e",
+        "g": "5bac03d3d742ca0e",
         "name": "",
         "x": 400,
         "y": 360,
@@ -4704,9 +4857,22 @@
         ]
     },
     {
+        "id": "7d191762d10b25c3",
+        "type": "subflow:60de16a0fefb7ace",
+        "z": "9aa1d42ce5cdb76e",
+        "g": "5bac03d3d742ca0e",
+        "name": "",
+        "x": 390,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "99b985c6d10e4c57",
         "type": "subflow:c70964ba34544694",
         "z": "9aa1d42ce5cdb76e",
+        "g": "5bac03d3d742ca0e",
         "name": "",
         "env": [
             {
@@ -4715,8 +4881,8 @@
                 "type": "str"
             }
         ],
-        "x": 400,
-        "y": 400,
+        "x": 390,
+        "y": 440,
         "wires": [
             []
         ]
@@ -4725,9 +4891,10 @@
         "id": "3abd9b2b0fd9f9ed",
         "type": "subflow:3aaeb350dea9a1f1",
         "z": "9aa1d42ce5cdb76e",
+        "g": "5bac03d3d742ca0e",
         "name": "",
-        "x": 420,
-        "y": 440,
+        "x": 410,
+        "y": 480,
         "wires": [
             []
         ]
@@ -4736,6 +4903,7 @@
         "id": "4a16563387a4c014",
         "type": "subflow:7d1e49e9a2f7337a",
         "z": "9aa1d42ce5cdb76e",
+        "g": "8450c1640aca6f9e",
         "name": "",
         "x": 720,
         "y": 140,
@@ -4747,9 +4915,10 @@
         "id": "71cd7e9d4614bc4b",
         "type": "subflow:973db1310fdebc19",
         "z": "9aa1d42ce5cdb76e",
+        "g": "313d8117d0ee9774",
         "name": "",
-        "x": 200,
-        "y": 580,
+        "x": 190,
+        "y": 680,
         "wires": [
             []
         ]
@@ -4758,9 +4927,10 @@
         "id": "2919c812e437c739",
         "type": "subflow:162e81fc107019c0",
         "z": "9aa1d42ce5cdb76e",
+        "g": "313d8117d0ee9774",
         "name": "",
-        "x": 200,
-        "y": 620,
+        "x": 190,
+        "y": 720,
         "wires": [
             []
         ]
@@ -4769,9 +4939,10 @@
         "id": "5115041e2d80cee4",
         "type": "subflow:8d72584ecbd0d019",
         "z": "9aa1d42ce5cdb76e",
+        "g": "5bac03d3d742ca0e",
         "name": "",
-        "x": 420,
-        "y": 480,
+        "x": 410,
+        "y": 520,
         "wires": [
             []
         ]
@@ -4780,6 +4951,7 @@
         "id": "feeb53a74fc7c359",
         "type": "comment",
         "z": "9aa1d42ce5cdb76e",
+        "g": "3f51e2232f060f3b",
         "name": "Use 'start node' and 'finish node' to define a new node.",
         "info": "",
         "x": 330,
@@ -4790,16 +4962,18 @@
         "id": "3dd6eba0d907050e",
         "type": "comment",
         "z": "9aa1d42ce5cdb76e",
+        "g": "5bac03d3d742ca0e",
         "name": "Design your interface wiring UI nodes between the start & finish nodes.",
         "info": "",
-        "x": 380,
-        "y": 240,
+        "x": 370,
+        "y": 280,
         "wires": []
     },
     {
         "id": "0530435dac1f862a",
         "type": "comment",
         "z": "9aa1d42ce5cdb76e",
+        "g": "8450c1640aca6f9e",
         "name": "Organize your UI into tabs with the tab node.",
         "info": "",
         "x": 840,
@@ -4810,26 +4984,29 @@
         "id": "b70c68b8740b96fc",
         "type": "comment",
         "z": "9aa1d42ce5cdb76e",
+        "g": "313d8117d0ee9774",
         "name": "Create repeating groups; (only label, field, selectbox, checkbox. & spinner)",
         "info": "",
-        "x": 390,
-        "y": 540,
+        "x": 380,
+        "y": 640,
         "wires": []
     },
     {
         "id": "8f8fa30ef736679c",
         "type": "comment",
         "z": "9aa1d42ce5cdb76e",
+        "g": "25940c79a0fbf181",
         "name": "Use templates to code your node's behaviors.",
         "info": "",
-        "x": 840,
-        "y": 240,
+        "x": 890,
+        "y": 280,
         "wires": []
     },
     {
         "id": "300f0735525d0102",
         "type": "inject",
         "z": "9aa1d42ce5cdb76e",
+        "g": "f7ef02f3851523e9",
         "name": "",
         "props": [
             {
@@ -4847,8 +5024,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 750,
-        "y": 420,
+        "x": 800,
+        "y": 500,
         "wires": [
             [
                 "d28fcd585276f2b8"
@@ -4859,6 +5036,7 @@
         "id": "d28fcd585276f2b8",
         "type": "subflow:85e13a6e48f6a1c3",
         "z": "9aa1d42ce5cdb76e",
+        "g": "f7ef02f3851523e9",
         "name": "",
         "env": [
             {
@@ -4907,8 +5085,8 @@
                 "type": "str"
             }
         ],
-        "x": 960,
-        "y": 420,
+        "x": 1010,
+        "y": 500,
         "wires": [
             [
                 "ace7471c4689165d",
@@ -4920,15 +5098,17 @@
         "id": "40046e3c0a327112",
         "type": "subflow:65d5e45697fed99a",
         "z": "9aa1d42ce5cdb76e",
+        "g": "f7ef02f3851523e9",
         "name": "",
-        "x": 1170,
-        "y": 480,
+        "x": 1220,
+        "y": 560,
         "wires": []
     },
     {
         "id": "ace7471c4689165d",
         "type": "subflow:7062e6f741533eb2",
         "z": "9aa1d42ce5cdb76e",
+        "g": "f7ef02f3851523e9",
         "name": "",
         "env": [
             {
@@ -4957,8 +5137,8 @@
                 "type": "str"
             }
         ],
-        "x": 1120,
-        "y": 420,
+        "x": 1170,
+        "y": 500,
         "wires": [
             [
                 "f7c03cbde7e9de62",
@@ -4970,43 +5150,18 @@
         "id": "c1fd7ca5c1059b98",
         "type": "comment",
         "z": "9aa1d42ce5cdb76e",
+        "g": "f7ef02f3851523e9",
         "name": "Invoke to create an example node definition",
         "info": "",
-        "x": 840,
-        "y": 380,
+        "x": 890,
+        "y": 460,
         "wires": []
-    },
-    {
-        "id": "723986549b69e89b",
-        "type": "inject",
-        "z": "9aa1d42ce5cdb76e",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 760,
-        "y": 640,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "13ae6a3488364edd",
         "type": "debug",
         "z": "9aa1d42ce5cdb76e",
+        "g": "f7ef02f3851523e9",
         "name": "debug 51",
         "active": true,
         "tosidebar": true,
@@ -5016,8 +5171,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1055,
-        "y": 380,
+        "x": 1105,
+        "y": 460,
         "wires": [],
         "l": false
     },
@@ -5025,6 +5180,7 @@
         "id": "11b1fb0b3f0c08b9",
         "type": "template",
         "z": "9aa1d42ce5cdb76e",
+        "g": "25940c79a0fbf181",
         "name": "nodemakerhtml",
         "field": "nodemakerhtml",
         "fieldType": "msg",
@@ -5032,8 +5188,8 @@
         "syntax": "mustache",
         "template": "<style>\n    {{{customcss}}}\n</style>\n<script type=\"text/html\" data-template-name=\"{{node_name}}\">\n    {{{inc_node_name}}}\n    <div id=\"node-props\" style=\"width: {{row_width}}px;\">\n        {{{edit_dialog}}}\n    </div><!--node-props-->\n</script>\n\n<script type=\"text/html\" data-help-name=\"{{node_name}}\">\n    {{{helpdetails}}}\n</script>\n\n<script type=\"text/javascript\">\n    RED.nodes.registerType('{{node_name}}', {\n        category: '{{node_category}}',\n        color: '{{node_color}}',\n        defaults: {\n            name: {value:\"\"},\n            {{{defaults}}}\n        },\n        inputs: {{numinputs}},\n        outputs: {{numoutputs}},\n        icon: \"font-awesome/fa-{{{node_icon}}}\",\n        label: function() {\n            return this.name || \"{{node_name}}\";\n        },\n        labelStyle: function() {\n            return this.name ? \"node_label_italic\" : \"\";\n        },\n        oneditprepare: function() {\n            {{{oneditprepare}}}\n        },\n        oneditresize: function() {\n            {{{oneditresize}}}        \n        },\n        oneditsave: function() {\n            {{{oneditsave}}}\n        },\n        oneditcancel: function() {\n            {{{oneditcancel}}}\n        }\n    });\n    {{{othercode}}}\n</script>\n",
         "output": "str",
-        "x": 930,
-        "y": 280,
+        "x": 980,
+        "y": 320,
         "wires": [
             []
         ]
@@ -5042,6 +5198,7 @@
         "id": "75ad4d90b1a97b9c",
         "type": "template",
         "z": "9aa1d42ce5cdb76e",
+        "g": "25940c79a0fbf181",
         "name": "nodemakerjs",
         "field": "nodemakerjs",
         "fieldType": "msg",
@@ -5049,8 +5206,8 @@
         "syntax": "mustache",
         "template": "module.exports = function(RED) {\n    function {{node_name}}(config) {\n        RED.nodes.createNode(this,config);\n        var node = this;\n        {{{runtimecode}}}\n    }\n    RED.nodes.registerType('{{node_name}}', {{node_name}});\n}",
         "output": "str",
-        "x": 920,
-        "y": 320,
+        "x": 970,
+        "y": 360,
         "wires": [
             []
         ]
@@ -5059,6 +5216,7 @@
         "id": "eb56b1f2bff50aa7",
         "type": "template",
         "z": "9aa1d42ce5cdb76e",
+        "g": "25940c79a0fbf181",
         "name": "runtimecode",
         "field": "runtimecode",
         "fieldType": "msg",
@@ -5066,29 +5224,20 @@
         "syntax": "mustache",
         "template": "node.on('input', function(msg) {\n    msg.payload = \"{{node_name}}\";\n    node.send(msg);\n});",
         "output": "str",
-        "x": 740,
-        "y": 320,
+        "x": 790,
+        "y": 360,
         "wires": [
             []
         ]
     },
     {
-        "id": "b73a92a09ff11387",
-        "type": "comment",
-        "z": "9aa1d42ce5cdb76e",
-        "name": "Test created example node. Refresh browser after above flow.",
-        "info": "",
-        "x": 900,
-        "y": 600,
-        "wires": []
-    },
-    {
         "id": "a3b93925ea64a640",
         "type": "subflow:7996feeba4e5f327",
         "z": "9aa1d42ce5cdb76e",
+        "g": "5bac03d3d742ca0e",
         "name": "",
-        "x": 190,
-        "y": 440,
+        "x": 180,
+        "y": 480,
         "wires": [
             []
         ]
@@ -5097,9 +5246,10 @@
         "id": "05ee1cee1d2cdd54",
         "type": "subflow:9771d13dd19bf60f",
         "z": "9aa1d42ce5cdb76e",
+        "g": "25940c79a0fbf181",
         "name": "",
-        "x": 740,
-        "y": 280,
+        "x": 790,
+        "y": 320,
         "wires": [
             []
         ]
@@ -5108,9 +5258,10 @@
         "id": "f7c03cbde7e9de62",
         "type": "subflow:9771d13dd19bf60f",
         "z": "9aa1d42ce5cdb76e",
+        "g": "f7ef02f3851523e9",
         "name": "",
-        "x": 740,
-        "y": 480,
+        "x": 790,
+        "y": 560,
         "wires": [
             [
                 "dea58bb02269e322",
@@ -5122,6 +5273,7 @@
         "id": "dea58bb02269e322",
         "type": "function",
         "z": "9aa1d42ce5cdb76e",
+        "g": "f7ef02f3851523e9",
         "name": "Runtime Code",
         "func": "const NodeName=global.get(\"node-maker.runtime.node_name\") || \"nonodenameprovided\";\nconst getFunctionBody = (string) => string.substring(\n    string.indexOf(\"{\") + 1,\n    string.lastIndexOf(\"}\")\n);\nfunction RuntimeCodeGoesHere(){\n    /*\n        This function is where you should put runtime code\n        Reference Links:\n            https://nodered.org/docs/creating-nodes/\n            https://nodered.org/docs/api/hooks/\n        Important Values/functions:\n            On Message Code:\n                node.on('input', function(msg){\n                    //this is where you should place code that runs when the node receives a message\n                });\n            Change Node status:\n                this.status({fill:\"yellow\",shape:\"ring\",text:\"a status message\"});\n            On Node Close\n                this.on('close', function(done) {\n                    doSomethingWithACallback(function() {\n                        done();\n                    });\n\n\n    */\n\n    this.on('input', function (msg) {\n        msg.payload = NodeName;\n        node.send(msg);\n    });\n    this.on('close', function (removed, done) {\n        if (removed) {\n            // This node has been disabled/deleted\n        } else {\n            // This node is being restarted\n            //const RightNow = new Date().toDateString();\n            const MessageString = \"Node Restarted at \" + (new Date().toDateString()) + \".\";\n            this.log(MessageString);\n            this.status({ fill: \"yellow\", shape: \"ring\", text: MessageString});\n        }\n        done();\n    });\n\n}\n\n\nRED.util.setMessageProperty(msg, \"runtimecode\", getFunctionBody(RuntimeCodeGoesHere.toString()), true);\n\nreturn msg;",
         "outputs": 1,
@@ -5129,8 +5281,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 940,
-        "y": 480,
+        "x": 990,
+        "y": 560,
         "wires": [
             [
                 "40046e3c0a327112",
@@ -5143,6 +5295,7 @@
         "id": "38832f08c1637657",
         "type": "debug",
         "z": "9aa1d42ce5cdb76e",
+        "g": "f7ef02f3851523e9",
         "name": "debug 58",
         "active": true,
         "tosidebar": true,
@@ -5152,8 +5305,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1155,
-        "y": 380,
+        "x": 1205,
+        "y": 460,
         "wires": [],
         "l": false
     },
@@ -5161,6 +5314,7 @@
         "id": "0492af91be18dbf5",
         "type": "debug",
         "z": "9aa1d42ce5cdb76e",
+        "g": "f7ef02f3851523e9",
         "name": "debug 59",
         "active": true,
         "tosidebar": true,
@@ -5170,8 +5324,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 775,
-        "y": 520,
+        "x": 825,
+        "y": 600,
         "wires": [],
         "l": false
     },
@@ -5179,6 +5333,7 @@
         "id": "cabc3fb676e73b38",
         "type": "debug",
         "z": "9aa1d42ce5cdb76e",
+        "g": "f7ef02f3851523e9",
         "name": "debug 60",
         "active": true,
         "tosidebar": true,
@@ -5188,8 +5343,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 965,
-        "y": 520,
+        "x": 1015,
+        "y": 600,
         "wires": [],
         "l": false
     },
