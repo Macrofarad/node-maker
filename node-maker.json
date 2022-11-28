@@ -2537,6 +2537,31 @@
         "y": 0
     },
     {
+        "id": "94bd4205cf2630ab",
+        "type": "group",
+        "z": "85e13a6e48f6a1c3",
+        "name": "Original Flow",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "729874432b3551f1",
+            "1a9cbb92df9f9927",
+            "e164bb1b88912998",
+            "4dc54964fd7d8d7b",
+            "c2f33b913e572b75",
+            "a79e8a6b35ceac10",
+            "6846859d76b0ec5e",
+            "4eaf4f130e10c617",
+            "7631ff7c6efd5ad8",
+            "1d506b65823c19c3"
+        ],
+        "x": 334,
+        "y": 479,
+        "w": 612,
+        "h": 242
+    },
+    {
         "id": "d7e901b6cb4bab1b",
         "type": "junction",
         "z": "60de16a0fefb7ace",
@@ -4338,6 +4363,7 @@
         "id": "729874432b3551f1",
         "type": "function",
         "z": "85e13a6e48f6a1c3",
+        "g": "94bd4205cf2630ab",
         "name": "function 1",
         "func": "msg.node_name = env.get('node_name');\nmsg.node_version = env.get('node_version');\nmsg.node_description = env.get('node_description');\nmsg.node_folder = env.get('HOME') + '/.node-red/node_modules/node-red-' + msg.node_name + '/';\nlet k = env.get('keywords');\nk = '\"' + k.replaceAll(' ', '').replaceAll(',', '\",\"') + '\"';\nmsg.node_category = env.get('node_category');\nmsg.node_icon = env.get('node_icon');\nmsg.node_color = env.get('node_color');\nmsg.keywords = k;\nmsg.author_name = env.get('author_name');\nmsg.author_email = env.get('author_email');\nmsg.github_handle = env.get('github_handle');\nmsg.package_json = msg.node_folder + 'package.json';\nmsg.gitignore = msg.node_folder + '.gitignore';\nmsg.license = msg.node_folder + 'LICENSE';\nmsg.readme = msg.node_folder + 'README.md';\nmsg.nodename_js = msg.node_folder + msg.node_name + '/' + msg.node_name + '.js';\nmsg.nodename_html = msg.node_folder + msg.node_name + '/' + msg.node_name + '.html';\nmsg.edit_dialog = [];\nmsg._oneditprepare = [];\nmsg._oneditresize = [];\nmsg._oneditsave = [];\nmsg._oneditcancel = [];\nmsg._othercode = {};\nmsg.defaults = [];\nmsg.row_width = env.get('row_width');\nmsg.numinputs = env.get('numinputs');\nmsg.numoutputs = env.get('numoutputs');\nmsg.inc_node_name = env.get('inc_node_name');\nmsg.nodemakerhtml = '';\nmsg.nodemakerjs = '';\nmsg.runtimecode = '';\nif (msg.inc_node_name) {\n    msg.inc_node_name = '    <div class=\"form-row\">' +\"\\n\";\n    msg.inc_node_name += '        <label for=\"node-input-name\"><i class=\"icon-tag\"></i> Name</label>' + \"\\n\";\n    msg.inc_node_name += '        <input type=\"text\" id=\"node-input-name\" placeholder=\"Name\">' + \"\\n\";\n    msg.inc_node_name += \"    </div>\";\n}else{\n    msg.inc_node_name = '';\n}\nreturn msg;",
         "outputs": 1,
@@ -4345,8 +4371,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 160,
-        "y": 40,
+        "x": 420,
+        "y": 520,
         "wires": [
             [
                 "1a9cbb92df9f9927",
@@ -4361,6 +4387,7 @@
         "id": "1a9cbb92df9f9927",
         "type": "template",
         "z": "85e13a6e48f6a1c3",
+        "g": "94bd4205cf2630ab",
         "name": "package.json",
         "field": "payload",
         "fieldType": "msg",
@@ -4368,8 +4395,8 @@
         "syntax": "mustache",
         "template": "{\n    \"name\": \"node-red-{{node_name}}\",\n    \"version\": \"{{node_version}}\",\n    \"description\": \"A node that merges msg objects until all defined properties are present / conditions met before passing the combined msg along.\",\n    \"author\": \"{{author_name}} <{{author_email}}>\",\n    \"license\": \"MIT\",\n    \"keywords\": [{{{keywords}}}],\n    \"repository\": {\n      \"type\": \"git\",\n      \"url\": \"https://github.com/{{github_handle}}/node-red-{{node_name}}.git\"\n    },\n    \"dependencies\": {\n    },\n    \"node-red\": {\n      \"nodes\": {\n        \"{{node_name}}\": \"{{node_name}}/{{node_name}}.js\"\n      }\n    }\n  }\n  ",
         "output": "str",
-        "x": 380,
-        "y": 40,
+        "x": 640,
+        "y": 520,
         "wires": [
             [
                 "e164bb1b88912998"
@@ -4380,6 +4407,7 @@
         "id": "e164bb1b88912998",
         "type": "file",
         "z": "85e13a6e48f6a1c3",
+        "g": "94bd4205cf2630ab",
         "name": "write package.json",
         "filename": "package_json",
         "filenameType": "msg",
@@ -4387,8 +4415,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "utf8",
-        "x": 570,
-        "y": 40,
+        "x": 830,
+        "y": 520,
         "wires": [
             []
         ]
@@ -4397,6 +4425,7 @@
         "id": "4dc54964fd7d8d7b",
         "type": "template",
         "z": "85e13a6e48f6a1c3",
+        "g": "94bd4205cf2630ab",
         "name": ".gitignore",
         "field": "payload",
         "fieldType": "msg",
@@ -4404,8 +4433,8 @@
         "syntax": "mustache",
         "template": ".DS_Store\nnode_modules\n",
         "output": "str",
-        "x": 360,
-        "y": 80,
+        "x": 620,
+        "y": 560,
         "wires": [
             [
                 "c2f33b913e572b75"
@@ -4416,6 +4445,7 @@
         "id": "c2f33b913e572b75",
         "type": "file",
         "z": "85e13a6e48f6a1c3",
+        "g": "94bd4205cf2630ab",
         "name": "write .gitignore",
         "filename": "gitignore",
         "filenameType": "msg",
@@ -4423,8 +4453,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "utf8",
-        "x": 560,
-        "y": 80,
+        "x": 820,
+        "y": 560,
         "wires": [
             []
         ]
@@ -4433,6 +4463,7 @@
         "id": "a79e8a6b35ceac10",
         "type": "template",
         "z": "85e13a6e48f6a1c3",
+        "g": "94bd4205cf2630ab",
         "name": "MIT License",
         "field": "payload",
         "fieldType": "msg",
@@ -4440,8 +4471,8 @@
         "syntax": "mustache",
         "template": "MIT License\n\nCopyright (c) 2022 {{author_name}}\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
         "output": "str",
-        "x": 370,
-        "y": 120,
+        "x": 630,
+        "y": 600,
         "wires": [
             [
                 "6846859d76b0ec5e"
@@ -4452,6 +4483,7 @@
         "id": "6846859d76b0ec5e",
         "type": "file",
         "z": "85e13a6e48f6a1c3",
+        "g": "94bd4205cf2630ab",
         "name": "write LICENSE",
         "filename": "license",
         "filenameType": "msg",
@@ -4459,8 +4491,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "utf8",
-        "x": 560,
-        "y": 120,
+        "x": 820,
+        "y": 600,
         "wires": [
             []
         ]
@@ -4469,6 +4501,7 @@
         "id": "4eaf4f130e10c617",
         "type": "template",
         "z": "85e13a6e48f6a1c3",
+        "g": "94bd4205cf2630ab",
         "name": "README.md",
         "field": "payload",
         "fieldType": "msg",
@@ -4476,8 +4509,8 @@
         "syntax": "mustache",
         "template": "# node-red-{{node_name}}\n{{{node_description}}}\n",
         "output": "str",
-        "x": 370,
-        "y": 160,
+        "x": 630,
+        "y": 640,
         "wires": [
             [
                 "7631ff7c6efd5ad8"
@@ -4488,6 +4521,7 @@
         "id": "7631ff7c6efd5ad8",
         "type": "file",
         "z": "85e13a6e48f6a1c3",
+        "g": "94bd4205cf2630ab",
         "name": "write README.md",
         "filename": "readme",
         "filenameType": "msg",
@@ -4495,8 +4529,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "utf8",
-        "x": 570,
-        "y": 160,
+        "x": 830,
+        "y": 640,
         "wires": [
             []
         ]
@@ -4505,6 +4539,7 @@
         "id": "1d506b65823c19c3",
         "type": "template",
         "z": "85e13a6e48f6a1c3",
+        "g": "94bd4205cf2630ab",
         "name": "customcss",
         "field": "customcss",
         "fieldType": "msg",
@@ -4512,8 +4547,8 @@
         "syntax": "mustache",
         "template": ".red-ui-tray-content #dialog-form {\n    white-space:nowrap;\n}\n.full-row .red-ui-typedInput-container {\n    min-width: 70%;\n}\n.col input {\n    min-width: 100%;\n}\n.sml-lbl {\n    height: 66px;\n}\n.sml-lbl label {\n    font-size: smaller;\n    margin-bottom: 0px;\n    display: block!important;\n}\n.reg-lbl label {\n    white-space: nowrap;\n    margin-top: 5px;\n    height: 0px;\n}\n.red-ui-editor .form-row label.full-lbl {\n    white-space: normal;\n    width: 100%;\n}\n.col {\n    float: left;\n    margin-right: 5px;\n    min-height: 36px;\n}\n.col .red-ui-typedInput-container {\n    width: 100%!important;\n}\n.col-50 {\n    width: 50%;\n}\n.col-33 {\n    width: 33%;\n}\n.col-66 {\n    width: 66%;\n}\n.col-25 {\n    width: 25%;\n}\n.col-75 {\n    width: 75%;\n}\n.col-100 .red-ui-typedInput-container {\n    width: 70%!important;\n}\n.col-100.no-label .red-ui-typedInput-container {\n    width: 100%!important;\n}\n.txtarea {\n    padding-bottom: 26px;\n}\n.txtarea label {\n    vertical-align: top;\n    margin-top: 3px;\n}\n.txtarea  textarea {\n    width: 70%;\n    margin-bottom: -28px!important;\n}\n.btn-regular {\n    margin-bottom: 14px!important;\n}\n.red-ui-editableList-item-content {\n    display: inline-block;\n    margin-bottom: -6px;\n    width: -moz-available;\n    width: -webkit-fill-available;\n    width: fill-available;\n}\n.red-ui-editableList-item-content .sml-lbl {\n    height: auto;\n}\n",
         "output": "str",
-        "x": 370,
-        "y": 200,
+        "x": 630,
+        "y": 680,
         "wires": [
             []
         ]
