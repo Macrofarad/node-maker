@@ -1,5 +1,5 @@
 # Note
-Warning, this is a work in progress version of node-maker that attempts to add in support for a node-red-dashboard based user interface. It also adds in support for running within flowforge or custom directories.  To enable these change a large amount of the baseline code has had to be modified.  At this time, this code is a work in progress.
+Warning, this is a work in progress version of node-maker that attempts to add in support for a node-red-dashboard based user interface. It also adds in support for running within flowforge or custom directories.  To enable these changes a large amount of the baseline code has had to be modified.  At this time, this code is a work in progress.
 
 # node-maker
 A set of subflow nodes that can be used to quickly create a new Node-RED node, the property panel, and the node's behavior. You can use Node Maker to easily create an initial template or the entire work necessary for creating a Node-RED node. 
