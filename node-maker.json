@@ -2404,38 +2404,6 @@
         "color": "#DDAA99"
     },
     {
-        "id": "452787930e527ffb",
-        "type": "group",
-        "z": "5f24aa4e2871644e",
-        "style": {
-            "stroke": "#44475a",
-            "stroke-opacity": "1",
-            "fill": "#1f2937",
-            "fill-opacity": "0.5",
-            "label": true,
-            "label-position": "nw",
-            "color": "#d1d2d9"
-        },
-        "nodes": [
-            "27336cc5ed22aa96",
-            "3d36b159e7510e8b",
-            "14cc7ad07c43c209",
-            "7924867b9e5cf157",
-            "5c1f72d478f91d7d",
-            "09839321370b1935",
-            "70c3c37cab078d30",
-            "bac6efc10068a50e",
-            "4cdf890b5ace5e1c",
-            "9237ee10b546feab",
-            "c8cf2f473eaa51bc",
-            "8876f3c040276cc2"
-        ],
-        "x": 294,
-        "y": 19,
-        "w": 362,
-        "h": 202
-    },
-    {
         "id": "c89dfd7b39e58204",
         "type": "group",
         "z": "5f24aa4e2871644e",
@@ -2456,10 +2424,8 @@
             "280532dc27a8c676",
             "3753ea6294bc8820"
         ],
-        "x": 274,
-        "y": 239,
-        "w": 632,
-        "h": 122
+        "x": 0,
+        "y": 0
     },
     {
         "id": "a07817ed834df932",
@@ -2488,9 +2454,7 @@
             "cc4cc17e606595c6"
         ],
         "x": 294,
-        "y": 539,
-        "w": 622,
-        "h": 282
+        "y": 539
     },
     {
         "id": "80201b308378720a",
@@ -2520,9 +2484,57 @@
             "1d0b5202023b245b"
         ],
         "x": 134,
-        "y": 299,
-        "w": 812,
-        "h": 409.5
+        "y": 299
+    },
+    {
+        "id": "36a1814c28e6bef3",
+        "type": "group",
+        "z": "5f24aa4e2871644e",
+        "style": {
+            "stroke": "rgba(68, 71, 90, 0.75)",
+            "stroke-opacity": "1",
+            "fill": "#21222c",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#f8f8f2"
+        },
+        "nodes": [
+            "452787930e527ffb"
+        ],
+        "x": 0,
+        "y": 0
+    },
+    {
+        "id": "452787930e527ffb",
+        "type": "group",
+        "z": "5f24aa4e2871644e",
+        "g": "36a1814c28e6bef3",
+        "style": {
+            "stroke": "#44475a",
+            "stroke-opacity": "1",
+            "fill": "#1f2937",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#d1d2d9"
+        },
+        "nodes": [
+            "27336cc5ed22aa96",
+            "3d36b159e7510e8b",
+            "14cc7ad07c43c209",
+            "7924867b9e5cf157",
+            "5c1f72d478f91d7d",
+            "09839321370b1935",
+            "70c3c37cab078d30",
+            "bac6efc10068a50e",
+            "4cdf890b5ace5e1c",
+            "9237ee10b546feab",
+            "c8cf2f473eaa51bc",
+            "8876f3c040276cc2"
+        ],
+        "x": 0,
+        "y": 0
     },
     {
         "id": "d7e901b6cb4bab1b",
@@ -2558,14 +2570,6 @@
                 "46fdba84593e4a18"
             ]
         ]
-    },
-    {
-        "id": "034dae3a6c64ba0c",
-        "type": "ui_tab",
-        "name": "Node Appearance",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
     },
     {
         "id": "f61860bb4885c8d6",
@@ -2664,6 +2668,14 @@
                 "py": 0
             }
         }
+    },
+    {
+        "id": "034dae3a6c64ba0c",
+        "type": "ui_tab",
+        "name": "Node Appearance",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
     },
     {
         "id": "044e014e95573719",
@@ -4528,7 +4540,7 @@
         "type": "function",
         "z": "85e13a6e48f6a1c3",
         "name": "StartNode",
-        "func": "//##############################################################################################################\n    //Start Setup Variables\n//##############################################################################################################\n\nconst AuthorEmail = global.get(\"node-maker.runtime.author_email\") || \"AuthorNotProvided\";\nconst AuthorName = global.get(\"node-maker.runtime.author_name\") || \"AuthorNotProvided\";\nconst GithubHandle = global.get(\"node-maker.runtime.github_handle\") || \"NoGithubHandleProvided\";\nconst NodeCategory = global.get(\"node-maker.runtime.node_category\") || \"nocategorydefined\";\nconst NodeColor = global.get(\"node-maker.runtime.node_color\") || \"#ffffff\";\nconst NodeDescription = global.get(\"node-maker.runtime.node_description\") || \"No Description Provided\";\nconst NodeIcon = global.get(\"node-maker.runtime.node_icon\") || \"fa-bug\";\nconst NodeIncNodeName = global.get(\"node-maker.runtime.node_inc_node_name\") || \"\"; //const NodeIncNodeName = env.get('inc_node_name');\nconst NodeKeywords = global.get(\"node-maker.runtime.node_keywords\") || [\"example\"];\n//const NodeLicenseType = \nconst NodeNamePrefix = \"node-red-contrib-\";\nconst NodeNumInputs = global.get(\"node-maker.runtime.node_numinputs\") || 1 ; //const NodeNumInputs = env.get('numinputs');\nconst NodeNumOutputs = global.get(\"node-maker.runtime.node_numoutputs\") || 1; //const NodeNumOutputs = env.get('numoutputs');\nconst NodeRowWidth = global.get(\"node-maker.runtime.node_row_width\") || 460; //const NodeRowWidth = env.get('row_width');\nconst NodeVersion = global.get(\"node-maker.runtime.node_version\") || \"0.0.0\";\nconst UserLicenseDecision = global.get(\"node-maker.runtime.node_licensetype\") || \"mit\";;\nconst RawFolderData = await RedUtil.exec.run(\"pwd\", [], {}, true);\nconst Year = new Date().getFullYear();\nconst NodeShortname = (function(){\n    const RawNodeNade = global.get(\"node-maker.runtime.node_name\") || \"node_red_example\";\n    const SanitizedNodeName = (function SanitizeNodeName() {\n        try {\n            return RawNodeNade.replace(/[^a-zA-Z]/g, \"_\");//replace all non-alphanumeric with underscore\n        } catch (error) {\n            node.error(\"Error Parsing Node name\", {...msg,errorData:{...error}});\n            return \"NodeNameError\";\n        };\n    })();\n    return SanitizedNodeName;\n})();\nconst FullNodeName = NodeNamePrefix + NodeShortname;\nconst NodeFolder = RawFolderData[\"stdout\"] + \"/node_modules/\" + FullNodeName + \"\";\nconst UserRepositoryTypeChoice = \"git\";\nconst UserRepositoryURL = \"https://github.com/\" + GithubHandle + \"/\" + FullNodeName + \".git\";\n\n\nlet k = env.get('keywords') || \"\";\nk = '\"' + k.replaceAll(' ', '').replaceAll(',', '\",\"') + '\"';\n\n\n\n\n\nconst PackageJsonFilename = NodeFolder+\"/\" + 'package.json';\nconst GitIgnore = NodeFolder + \"/\"+ '.gitignore';\nconst LicenseDirectory = NodeFolder + \"/\" + 'LICENSE';\nconst ReadmeDirectory = NodeFolder + \"/\" + 'README.md';\nconst NodeName_js = NodeFolder + \"/\" + FullNodeName + '/' + FullNodeName + '.js'; //const NodeName_js = NodeFolder + \"/\" + msg.node_name + '/' + msg.node_name + '.js';//FullNodeName\nconst NodeName_html = NodeFolder + \"/\" + FullNodeName + '/' + FullNodeName + '.html'; //const NodeName_html = NodeFolder + \"/\" + msg.node_name + '/' + msg.node_name + '.html';\n\nconst MITLicense = 'MIT License' + \"\\n\" +\n    //\"Copyright(c) 2022 \" + AuthorName + \"\\n\" +\n    \"Copyright(c) \" + Year + \" \" + AuthorName + \"\\n\" +\n    \"Permission is hereby granted, free of charge, to any person obtaining a copy\" + \"\\n\" +\n    'of this software and associated documentation files(the \"Software\"), to deal' + \"\\n\" +\n    'in the Software without restriction, including without limitation the rights' + \"\\n\" +\n    'to use, copy, modify, merge, publish, distribute, sublicense, and / or sell' + \"\\n\" +\n    'copies of the Software, and to permit persons to whom the Software is' + \"\\n\" +\n    'furnished to do so, subject to the following conditions:' + \"\\n\" +\n    \"\\n\" +\n    'The above copyright notice and this permission notice shall be included in all' + \"\\n\" +\n    'copies or substantial portions of the Software.' + \"\\n\" +\n    \"\\n\" +\n    'THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR' + \"\\n\" +\n    'IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,' + \"\\n\" +\n    'FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE' + \"\\n\" +\n    'AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER' + \"\\n\" +\n    'LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,' + \"\\n\" +\n    'OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE' + \"\\n\" +\n    'SOFTWARE.';\n\n\n\n//##############################################################################################################\n    //End Setup Variables\n//##############################################################################################################\n\nasync function WriteFile(Directory, Payload) {\n    function SantitizeFilePath(input, replacementChar) {\n        /*jshint node:true*/\n        //'use strict';\n\n        /**\n         * Originally From: https://github.com/parshap/node-sanitize-filename/blob/master/test.js\n         * modified by macrofarad\n         * Please check the original repo if you'd like more info on how this works\n        **/\n\n\n        var illegalRe = /[\\?<>:\\*\\|\"]/g; //removed the / and \\ from the list\n        //var illegalRe = /[\\/\\?<>\\\\:\\*\\|\"]/g;\n        var controlRe = /[\\x00-\\x1f\\x80-\\x9f]/g;\n        var reservedRe = /^\\.+$/;\n        var windowsReservedRe = /^(con|prn|aux|nul|com[0-9]|lpt[0-9])(\\..*)?$/i;\n        var windowsTrailingRe = /[\\. ]+$/;\n        var replacement = replacementChar || \"\";//sub in an empty string if not provided\n\n        var sanitized = (function sanitize() {\n            //function sanitize(input, replacement) {\n            if (typeof input !== 'string') {\n                try {\n                    input = RED.util.ensureString(input);\n                } catch (error) {\n                    node.error('File Path must be string');\n                };\n            }\n            if (input.length > 254) { node.error(\"file path is too long\"); }\n            var sanitized = input\n                .replace(illegalRe, replacement)\n                .replace(controlRe, replacement)\n                .replace(reservedRe, replacement)\n                .replace(windowsReservedRe, replacement)\n                .replace(windowsTrailingRe, replacement);\n            //return truncate(sanitized, 255);\n            return sanitized;\n        })();\n        return sanitized;\n    }\n    //const fs = require('fs/promises');\n    //const path = require('path');\n    \n    async function _isExists(path) {\n        try {\n            await fs.promises.access(path);\n            return true;\n        } catch { return false; }\n    };\n\n    async function _writeFile(filePath, data) {\n\n\n        try {\n            const dirname = path.dirname(filePath);\n            const exist = await _isExists(dirname);\n            if (!exist) { \n                node.warn(\"creating folders for \"+ dirname);\n                await fs.promises.mkdir(dirname, { recursive: true }); \n                } //create dir if not exists\n            await fs.promises.writeFile(filePath, data, 'utf8');\n            \n        } catch (err) {\n            node.error({\n                \"errorMessage\": \"File Not properly saved\"\n                , \"errorDetails\": { ...err }\n                , \"Directory\": Directory\n                , \"Data\": RED.util.ensureString(Payload)\n                , \"messageobject\": RED.util.cloneMessage(msg)\n            }, msg);\n            //throw new Error(err);\n        }\n    }\n    \n\n    (async function RunSequence() {\n        //const data = 'Hello, World!';\n        //await _writeFile('dist/posts/hello-world.html', data);\n        Directory = SantitizeFilePath(Directory, \"\");//ensure valid filepath  \n        await _writeFile(Directory, RED.util.ensureString(Payload));\n    })();\n\n}// Example Call: WriteFile(LicenseDirectory, MITLicense);\n\n\n\n\n\n\n\n\n\n\nfunction FormatBaseMessages() {\n    (function () { //Defined Messages\n        RED.util.setMessageProperty(msg, \"node_name\", NodeShortname, true); //msg.node_name = env.get('node_name');\n        RED.util.setMessageProperty(msg, \"node_version\", NodeVersion, true); //msg.node_version = NodeVersion;\n        RED.util.setMessageProperty(msg, \"node_description\", NodeDescription, true); //msg.node_description = NodeDescription;\n        RED.util.setMessageProperty(msg, \"node_folder\", NodeFolder, true); //msg.node_folder = NodeFolder\n        RED.util.setMessageProperty(msg, \"node_category\", NodeCategory, true); //msg.node_category = NodeCategory;\n        RED.util.setMessageProperty(msg, \"node_icon\", NodeIcon, true); //msg.node_icon = NodeIcon;\n        RED.util.setMessageProperty(msg, \"node_color\", NodeColor, true); //msg.node_color = NodeColor;\n        RED.util.setMessageProperty(msg, \"keywords\", k, true); //msg.keywords = k;\n        RED.util.setMessageProperty(msg, \"author_name\", AuthorName, true); //msg.author_name = AuthorName;\n        RED.util.setMessageProperty(msg, \"author_email\", AuthorEmail, true); //msg.author_email = AuthorEmail;\n        RED.util.setMessageProperty(msg, \"github_handle\", GithubHandle, true); //msg.github_handle = GithubHandle;\n        RED.util.setMessageProperty(msg, \"package_json\", PackageJsonFilename, true); //msg.package_json = PackageJsonFilename;\n        RED.util.setMessageProperty(msg, \"gitignore\", GitIgnore, true); //msg.gitignore = GitIgnore;\n        RED.util.setMessageProperty(msg, \"license\", LicenseDirectory, true); //msg.license = LicenseDirectory;\n        RED.util.setMessageProperty(msg, \"readme\", ReadmeDirectory, true); //msg.readme = ReadmeDirectory;\n        RED.util.setMessageProperty(msg, \"nodename_js\", NodeName_js, true);//msg.nodename_js = NodeName_js;\n        RED.util.setMessageProperty(msg, \"nodename_html\", NodeName_html, true); //msg.nodename_html = NodeName_html;\n        RED.util.setMessageProperty(msg, \"row_width\", NodeRowWidth, true); //msg.row_width = NodeRowWidth;\n        RED.util.setMessageProperty(msg, \"numinputs\", NodeNumInputs, true); //msg.numinputs = NodeNumInputs;\n        RED.util.setMessageProperty(msg, \"numoutputs\", NodeNumOutputs, true); //msg.numoutputs = NodeNumOutputs;\n        RED.util.setMessageProperty(msg, \"inc_node_name\", NodeIncNodeName, true); //msg.inc_node_name = NodeIncNodeName;\n    })(); \n    (function(){ //blank setup messages\n        msg.nodemakerhtml = '';\n        msg.nodemakerjs = '';\n        msg.runtimecode = '';\n        msg.edit_dialog = [];\n        msg._oneditprepare = [];\n        msg._oneditresize = [];\n        msg._oneditsave = [];\n        msg._oneditcancel = [];\n        msg._othercode = {};\n        msg.defaults = [];\n        if (msg.inc_node_name) {\n            msg.inc_node_name = '    <div class=\"form-row\">' + \"\\n\";\n            msg.inc_node_name += '        <label for=\"node-input-name\"><i class=\"icon-tag\"></i> Name</label>' + \"\\n\";\n            msg.inc_node_name += '        <input type=\"text\" id=\"node-input-name\" placeholder=\"Name\">' + \"\\n\";\n            msg.inc_node_name += \"    </div>\";\n        } else {\n            msg.inc_node_name = '';\n        }\n    })();\n}\n\nasync function FormatPackageJson() {\n    var packagejsonpayload = {\n        \"name\": FullNodeName\n        , \"version\": NodeVersion\n        , \"description\": NodeDescription\n        , \"author\": AuthorName + \" <\" + AuthorEmail + \">\"\n        , \"license\": UserLicenseDecision.toUpperCase()\n        , \"keywords\": [...NodeKeywords] //, \"keywords\": [...msg.keywords]//NodeKeywords\n        , \"repository\": {\n            \"type\": UserRepositoryTypeChoice\n            , \"url\": UserRepositoryURL\n        }\n        , \"dependencies\": {\n        },\n        \"node-red\": {\n            \"nodes\": {\n                NodeShortname: FullNodeName + \"/\" + FullNodeName+\".js\" //\"{{node_name}}\": \"{{node_name}}/{{node_name}}.js\"\n            }\n        }\n    };\n    //var outputArray = new Array(node.outputCount).fill(null);\n    //outputArray[0] = { ...msg, payload: packagejsonpayload};\n    //node.send(outputArray);\n    WriteFile(PackageJsonFilename, packagejsonpayload);\n\n}\n\nasync function FormatGitignore() {\n    const gitIgnorePayload = \".DS_Store\" + \"\\n\" + \"node_modules\";\n    WriteFile(GitIgnore, gitIgnorePayload);\n    //var outputArray = new Array(node.outputCount).fill(null);\n    //outputArray[1] = { ...msg, payload: gitIgnorePayload };\n    //node.send(outputArray);\n} \nasync function FormatLicense() {\n    const ChosenLicense = (function () {\n        //put choice logic here if needed, otherwise it'll just use mit license\n        if (UserLicenseDecision.toLowerCase() == \"mit\") { return MITLicense; }\n        if (UserLicenseDecision.toLowerCase() != \"mit\") { \n            node.warn(\"warning, unsupported license type chosen, you'll need to manually insert the new license type to the following file '\" + LicenseDirectory+\"'\");\n            return \"Unsupported License Type\"; }\n    })();\n\n    WriteFile(LicenseDirectory, ChosenLicense);\n    //var outputArray = new Array(node.outputCount).fill(null);\n    //outputArray[2] = { ...msg, payload: licensePayload };\n    //node.send(outputArray);\n}\nasync function FormatReadme() {\n    const readmePayload =\n        \"#\" + FullNodeName + \"\\n\" +\n        NodeDescription;\n\n    WriteFile(ReadmeDirectory, readmePayload);\n    //var outputArray = new Array(node.outputCount).fill(null);\n    //outputArray[3] = { ...msg, payload: readmePayload };\n    //node.send(outputArray);\n}\nfunction SendToCSSOut() {\n    //var outputArray = new Array(node.outputCount).fill(null);\n    //outputArray[4] = { ...msg};\n    //node.send(outputArray);\n    node.send(msg);\n}\n\n\n\n(async function PrimaryHydra(){\n    FormatBaseMessages();//get all the info\n    FormatPackageJson();\n    FormatGitignore();\n    FormatLicense();\n    FormatReadme();\n    SendToCSSOut();\n    node.done;\n})();\n",
+        "func": "//##############################################################################################################\n    //Start Setup Variables\n//##############################################################################################################\n\nconst AuthorEmail = global.get(\"node-maker.runtime.author_email\") || \"AuthorNotProvided\";\nconst AuthorName = global.get(\"node-maker.runtime.author_name\") || \"AuthorNotProvided\";\nconst GithubHandle = global.get(\"node-maker.runtime.github_handle\") || \"NoGithubHandleProvided\";\nconst NodeCategory = global.get(\"node-maker.runtime.node_category\") || \"nocategorydefined\";\nconst NodeColor = global.get(\"node-maker.runtime.node_color\") || \"#ffffff\";\nconst NodeDescription = global.get(\"node-maker.runtime.node_description\") || \"No Description Provided\";\nconst NodeIcon = global.get(\"node-maker.runtime.node_icon\") || \"fa-bug\";\nconst NodeIncNodeName = global.get(\"node-maker.runtime.node_inc_node_name\") || \"\"; //const NodeIncNodeName = env.get('inc_node_name');\nconst NodeKeywords = global.get(\"node-maker.runtime.node_keywords\") || [\"example\"];\n//const NodeLicenseType = \nconst NodeNamePrefix = \"node-red-contrib-\";\nconst NodeNumInputs = global.get(\"node-maker.runtime.node_numinputs\") || 1 ; //const NodeNumInputs = env.get('numinputs');\nconst NodeNumOutputs = global.get(\"node-maker.runtime.node_numoutputs\") || 1; //const NodeNumOutputs = env.get('numoutputs');\nconst NodeRowWidth = global.get(\"node-maker.runtime.node_row_width\") || 460; //const NodeRowWidth = env.get('row_width');\nconst NodeVersion = global.get(\"node-maker.runtime.node_version\") || \"0.0.0\";\nconst UserLicenseDecision = global.get(\"node-maker.runtime.node_licensetype\") || \"mit\";;\nconst RawFolderData = (async function(){\n    //check if /data and docker resources are available\n    const WorkingDirectory = await RedUtil.exec.run(\"pwd\", [], {}, true);\n    const CheckIfDocker = await RedUtil.exec.run(\"ls -la /.dockerenv \", [], {}, true);//ls -la /.dockerenv \n    node.warn({\"DockerCheck\":CheckIfDocker});\n\n})();\n\n\n\n\nconst Year = new Date().getFullYear();\nconst NodeShortname = (function(){\n    const RawNodeNade = global.get(\"node-maker.runtime.node_name\") || \"node_red_example\";\n    const SanitizedNodeName = (function SanitizeNodeName() {\n        try {\n            return RawNodeNade.replace(/[^a-zA-Z]/g, \"_\");//replace all non-alphanumeric with underscore\n        } catch (error) {\n            node.error(\"Error Parsing Node name\", {...msg,errorData:{...error}});\n            return \"NodeNameError\";\n        };\n    })();\n    return SanitizedNodeName;\n})();\nconst FullNodeName = NodeNamePrefix + NodeShortname;\nconst NodeFolder = RawFolderData[\"stdout\"] + \"/node_modules/\" + FullNodeName + \"\";\nconst UserRepositoryTypeChoice = \"git\";\nconst UserRepositoryURL = \"https://github.com/\" + GithubHandle + \"/\" + FullNodeName + \".git\";\n\n\nlet k = env.get('keywords') || \"\";\nk = '\"' + k.replaceAll(' ', '').replaceAll(',', '\",\"') + '\"';\n\n\n\n\n\nconst PackageJsonFilename = NodeFolder+\"/\" + 'package.json';\nconst GitIgnore = NodeFolder + \"/\"+ '.gitignore';\nconst LicenseDirectory = NodeFolder + \"/\" + 'LICENSE';\nconst ReadmeDirectory = NodeFolder + \"/\" + 'README.md';\nconst NodeName_js = NodeFolder + \"/\" + FullNodeName + '/' + FullNodeName + '.js'; //const NodeName_js = NodeFolder + \"/\" + msg.node_name + '/' + msg.node_name + '.js';//FullNodeName\nconst NodeName_html = NodeFolder + \"/\" + FullNodeName + '/' + FullNodeName + '.html'; //const NodeName_html = NodeFolder + \"/\" + msg.node_name + '/' + msg.node_name + '.html';\n\nconst MITLicense = 'MIT License' + \"\\n\" +\n    //\"Copyright(c) 2022 \" + AuthorName + \"\\n\" +\n    \"Copyright(c) \" + Year + \" \" + AuthorName + \"\\n\" +\n    \"Permission is hereby granted, free of charge, to any person obtaining a copy\" + \"\\n\" +\n    'of this software and associated documentation files(the \"Software\"), to deal' + \"\\n\" +\n    'in the Software without restriction, including without limitation the rights' + \"\\n\" +\n    'to use, copy, modify, merge, publish, distribute, sublicense, and / or sell' + \"\\n\" +\n    'copies of the Software, and to permit persons to whom the Software is' + \"\\n\" +\n    'furnished to do so, subject to the following conditions:' + \"\\n\" +\n    \"\\n\" +\n    'The above copyright notice and this permission notice shall be included in all' + \"\\n\" +\n    'copies or substantial portions of the Software.' + \"\\n\" +\n    \"\\n\" +\n    'THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR' + \"\\n\" +\n    'IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,' + \"\\n\" +\n    'FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE' + \"\\n\" +\n    'AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER' + \"\\n\" +\n    'LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,' + \"\\n\" +\n    'OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE' + \"\\n\" +\n    'SOFTWARE.';\n\n\n\n//##############################################################################################################\n    //End Setup Variables\n//##############################################################################################################\n\nasync function WriteFile(Directory, Payload) {\n    function SantitizeFilePath(input, replacementChar) {\n        /*jshint node:true*/\n        //'use strict';\n\n        /**\n         * Originally From: https://github.com/parshap/node-sanitize-filename/blob/master/test.js\n         * modified by macrofarad\n         * Please check the original repo if you'd like more info on how this works\n        **/\n\n\n        var illegalRe = /[\\?<>:\\*\\|\"]/g; //removed the / and \\ from the list\n        //var illegalRe = /[\\/\\?<>\\\\:\\*\\|\"]/g;\n        var controlRe = /[\\x00-\\x1f\\x80-\\x9f]/g;\n        var reservedRe = /^\\.+$/;\n        var windowsReservedRe = /^(con|prn|aux|nul|com[0-9]|lpt[0-9])(\\..*)?$/i;\n        var windowsTrailingRe = /[\\. ]+$/;\n        var replacement = replacementChar || \"\";//sub in an empty string if not provided\n\n        var sanitized = (function sanitize() {\n            //function sanitize(input, replacement) {\n            if (typeof input !== 'string') {\n                try {\n                    input = RED.util.ensureString(input);\n                } catch (error) {\n                    node.error('File Path must be string');\n                };\n            }\n            if (input.length > 254) { node.error(\"file path is too long\"); }\n            var sanitized = input\n                .replace(illegalRe, replacement)\n                .replace(controlRe, replacement)\n                .replace(reservedRe, replacement)\n                .replace(windowsReservedRe, replacement)\n                .replace(windowsTrailingRe, replacement);\n            //return truncate(sanitized, 255);\n            return sanitized;\n        })();\n        return sanitized;\n    }\n    //const fs = require('fs/promises');\n    //const path = require('path');\n    \n    async function _isExists(path) {\n        try {\n            await fs.promises.access(path);\n            return true;\n        } catch { return false; }\n    };\n\n    async function _writeFile(filePath, data) {\n\n\n        try {\n            const dirname = path.dirname(filePath);\n            const exist = await _isExists(dirname);\n            if (!exist) { \n                node.warn(\"creating folders for \"+ dirname);\n                await fs.promises.mkdir(dirname, { recursive: true }); \n                } //create dir if not exists\n            await fs.promises.writeFile(filePath, data, 'utf8');\n            \n        } catch (err) {\n            node.error({\n                \"errorMessage\": \"File Not properly saved\"\n                , \"errorDetails\": { ...err }\n                , \"Directory\": Directory\n                , \"Data\": RED.util.ensureString(Payload)\n                , \"messageobject\": RED.util.cloneMessage(msg)\n            }, msg);\n            //throw new Error(err);\n        }\n    }\n    \n\n    (async function RunSequence() {\n        //const data = 'Hello, World!';\n        //await _writeFile('dist/posts/hello-world.html', data);\n        Directory = SantitizeFilePath(Directory, \"\");//ensure valid filepath  \n        await _writeFile(Directory, RED.util.ensureString(Payload));\n    })();\n\n}// Example Call: WriteFile(LicenseDirectory, MITLicense);\n\n\n\n\n\n\n\n\n\n\nfunction FormatBaseMessages() {\n    (function () { //Defined Messages\n        RED.util.setMessageProperty(msg, \"node_name\", NodeShortname, true); //msg.node_name = env.get('node_name');\n        RED.util.setMessageProperty(msg, \"node_version\", NodeVersion, true); //msg.node_version = NodeVersion;\n        RED.util.setMessageProperty(msg, \"node_description\", NodeDescription, true); //msg.node_description = NodeDescription;\n        RED.util.setMessageProperty(msg, \"node_folder\", NodeFolder, true); //msg.node_folder = NodeFolder\n        RED.util.setMessageProperty(msg, \"node_category\", NodeCategory, true); //msg.node_category = NodeCategory;\n        RED.util.setMessageProperty(msg, \"node_icon\", NodeIcon, true); //msg.node_icon = NodeIcon;\n        RED.util.setMessageProperty(msg, \"node_color\", NodeColor, true); //msg.node_color = NodeColor;\n        RED.util.setMessageProperty(msg, \"keywords\", k, true); //msg.keywords = k;\n        RED.util.setMessageProperty(msg, \"author_name\", AuthorName, true); //msg.author_name = AuthorName;\n        RED.util.setMessageProperty(msg, \"author_email\", AuthorEmail, true); //msg.author_email = AuthorEmail;\n        RED.util.setMessageProperty(msg, \"github_handle\", GithubHandle, true); //msg.github_handle = GithubHandle;\n        RED.util.setMessageProperty(msg, \"package_json\", PackageJsonFilename, true); //msg.package_json = PackageJsonFilename;\n        RED.util.setMessageProperty(msg, \"gitignore\", GitIgnore, true); //msg.gitignore = GitIgnore;\n        RED.util.setMessageProperty(msg, \"license\", LicenseDirectory, true); //msg.license = LicenseDirectory;\n        RED.util.setMessageProperty(msg, \"readme\", ReadmeDirectory, true); //msg.readme = ReadmeDirectory;\n        RED.util.setMessageProperty(msg, \"nodename_js\", NodeName_js, true);//msg.nodename_js = NodeName_js;\n        RED.util.setMessageProperty(msg, \"nodename_html\", NodeName_html, true); //msg.nodename_html = NodeName_html;\n        RED.util.setMessageProperty(msg, \"row_width\", NodeRowWidth, true); //msg.row_width = NodeRowWidth;\n        RED.util.setMessageProperty(msg, \"numinputs\", NodeNumInputs, true); //msg.numinputs = NodeNumInputs;\n        RED.util.setMessageProperty(msg, \"numoutputs\", NodeNumOutputs, true); //msg.numoutputs = NodeNumOutputs;\n        RED.util.setMessageProperty(msg, \"inc_node_name\", NodeIncNodeName, true); //msg.inc_node_name = NodeIncNodeName;\n    })(); \n    (function(){ //blank setup messages\n        msg.nodemakerhtml = '';\n        msg.nodemakerjs = '';\n        msg.runtimecode = '';\n        msg.edit_dialog = [];\n        msg._oneditprepare = [];\n        msg._oneditresize = [];\n        msg._oneditsave = [];\n        msg._oneditcancel = [];\n        msg._othercode = {};\n        msg.defaults = [];\n        if (msg.inc_node_name) {\n            msg.inc_node_name = '    <div class=\"form-row\">' + \"\\n\";\n            msg.inc_node_name += '        <label for=\"node-input-name\"><i class=\"icon-tag\"></i> Name</label>' + \"\\n\";\n            msg.inc_node_name += '        <input type=\"text\" id=\"node-input-name\" placeholder=\"Name\">' + \"\\n\";\n            msg.inc_node_name += \"    </div>\";\n        } else {\n            msg.inc_node_name = '';\n        }\n    })();\n}\n\nasync function FormatPackageJson() {\n    var packagejsonpayload = {\n        \"name\": FullNodeName\n        , \"version\": NodeVersion\n        , \"description\": NodeDescription\n        , \"author\": AuthorName + \" <\" + AuthorEmail + \">\"\n        , \"license\": UserLicenseDecision.toUpperCase()\n        , \"keywords\": [...NodeKeywords] //, \"keywords\": [...msg.keywords]//NodeKeywords\n        , \"repository\": {\n            \"type\": UserRepositoryTypeChoice\n            , \"url\": UserRepositoryURL\n        }\n        , \"dependencies\": {\n        },\n        \"node-red\": {\n            \"nodes\": {\n                NodeShortname: FullNodeName + \"/\" + FullNodeName+\".js\" //\"{{node_name}}\": \"{{node_name}}/{{node_name}}.js\"\n            }\n        }\n    };\n    //var outputArray = new Array(node.outputCount).fill(null);\n    //outputArray[0] = { ...msg, payload: packagejsonpayload};\n    //node.send(outputArray);\n    WriteFile(PackageJsonFilename, packagejsonpayload);\n\n}\n\nasync function FormatGitignore() {\n    const gitIgnorePayload = \".DS_Store\" + \"\\n\" + \"node_modules\";\n    WriteFile(GitIgnore, gitIgnorePayload);\n    //var outputArray = new Array(node.outputCount).fill(null);\n    //outputArray[1] = { ...msg, payload: gitIgnorePayload };\n    //node.send(outputArray);\n} \nasync function FormatLicense() {\n    const ChosenLicense = (function () {\n        //put choice logic here if needed, otherwise it'll just use mit license\n        if (UserLicenseDecision.toLowerCase() == \"mit\") { return MITLicense; }\n        if (UserLicenseDecision.toLowerCase() != \"mit\") { \n            node.warn(\"warning, unsupported license type chosen, you'll need to manually insert the new license type to the following file '\" + LicenseDirectory+\"'\");\n            return \"Unsupported License Type\"; }\n    })();\n\n    WriteFile(LicenseDirectory, ChosenLicense);\n    //var outputArray = new Array(node.outputCount).fill(null);\n    //outputArray[2] = { ...msg, payload: licensePayload };\n    //node.send(outputArray);\n}\nasync function FormatReadme() {\n    const readmePayload =\n        \"#\" + FullNodeName + \"\\n\" +\n        NodeDescription;\n\n    WriteFile(ReadmeDirectory, readmePayload);\n    //var outputArray = new Array(node.outputCount).fill(null);\n    //outputArray[3] = { ...msg, payload: readmePayload };\n    //node.send(outputArray);\n}\nfunction SendToCSSOut() {\n    //var outputArray = new Array(node.outputCount).fill(null);\n    //outputArray[4] = { ...msg};\n    //node.send(outputArray);\n    node.send(msg);\n}\n\n\n\n(async function PrimaryHydra(){\n    FormatBaseMessages();//get all the info\n    FormatPackageJson();\n    FormatGitignore();\n    FormatLicense();\n    FormatReadme();\n    SendToCSSOut();\n    node.done;\n})();\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5147,180 +5159,6 @@
         "l": false
     },
     {
-        "id": "27336cc5ed22aa96",
-        "type": "ui_colour_picker",
-        "z": "5f24aa4e2871644e",
-        "g": "452787930e527ffb",
-        "name": "",
-        "label": "Node Color",
-        "group": "d7803cdee2fde4e0",
-        "format": "hex",
-        "outformat": "string",
-        "showSwatch": true,
-        "showPicker": true,
-        "showValue": true,
-        "showHue": false,
-        "showAlpha": false,
-        "showLightness": true,
-        "square": "false",
-        "dynOutput": "false",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 450,
-        "y": 140,
-        "wires": [
-            [
-                "7924867b9e5cf157"
-            ]
-        ]
-    },
-    {
-        "id": "3d36b159e7510e8b",
-        "type": "ui_form",
-        "z": "5f24aa4e2871644e",
-        "g": "452787930e527ffb",
-        "name": "Form Values",
-        "label": "Node Data",
-        "group": "044e014e95573719",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "options": [
-            {
-                "label": "Node Name",
-                "value": "node_name",
-                "type": "text",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Node Description",
-                "value": "node_description",
-                "type": "multiline",
-                "required": false,
-                "rows": 3
-            },
-            {
-                "label": "Node Version",
-                "value": "node_version",
-                "type": "text",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Author Name",
-                "value": "author_name",
-                "type": "text",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Author Email",
-                "value": "author_email",
-                "type": "email",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Node Output Num",
-                "value": "node_outputnum",
-                "type": "number",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Node Icon",
-                "value": "node_icon",
-                "type": "text",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Github Handle",
-                "value": "github_handle",
-                "type": "text",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Node Category",
-                "value": "node_category",
-                "type": "text",
-                "required": false,
-                "rows": null
-            }
-        ],
-        "formValue": {
-            "node_name": "",
-            "node_description": "",
-            "node_version": "",
-            "author_name": "",
-            "author_email": "",
-            "node_outputnum": "",
-            "node_icon": "",
-            "github_handle": "",
-            "node_category": ""
-        },
-        "payload": "",
-        "submit": "submit",
-        "cancel": "clear",
-        "topic": "topic",
-        "topicType": "msg",
-        "splitLayout": "",
-        "className": "",
-        "x": 450,
-        "y": 180,
-        "wires": [
-            [
-                "14cc7ad07c43c209"
-            ]
-        ]
-    },
-    {
-        "id": "09839321370b1935",
-        "type": "ui_dropdown",
-        "z": "5f24aa4e2871644e",
-        "g": "452787930e527ffb",
-        "name": "License",
-        "label": "License Type",
-        "tooltip": "Please select a license",
-        "place": "Please select a license",
-        "group": "044e014e95573719",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "MIT License",
-                "value": "mit",
-                "type": "str"
-            },
-            {
-                "label": "other",
-                "value": "other",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 440,
-        "y": 100,
-        "wires": [
-            [
-                "5c1f72d478f91d7d"
-            ]
-        ]
-    },
-    {
         "id": "5c1f72d478f91d7d",
         "type": "function",
         "z": "5f24aa4e2871644e",
@@ -5468,27 +5306,6 @@
         ]
     },
     {
-        "id": "479370d2bf301a47",
-        "type": "ui_template",
-        "z": "5f24aa4e2871644e",
-        "group": "1ee5b5eee8fb372d",
-        "name": "Node Preview",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "format": "<script type=\"text/javascript\">\n    RED.nodes.registerType('ui_button',{\n        category: RED._(\"node-red-dashboard/ui_base:ui_base.label.category\"),\n        color: 'rgb(176, 223, 227)',\n        defaults: {\n            name: {value: ''},\n            group: {type: 'ui_group', required: true},\n            order: {value: 0},\n            width: {value: 0, validate: function(v) {\n                    var width = v||0;\n                    var currentGroup = $('#node-input-group').val()||this.group;\n                    var groupNode = RED.nodes.node(currentGroup);\n                    var valid = !groupNode || +width <= +groupNode.width;\n                    $(\"#node-input-size\").toggleClass(\"input-error\",!valid);\n                    return valid;\n                }\n            },\n            height: {value: 0},\n            passthru: {value: false},\n            label: {value: 'button'},\n            tooltip: {value: ''},\n            color: {value: ''},\n            bgcolor: {value: ''},\n            className: {value: ''},\n            icon: {value: ''},\n            payload: {value: '',validate: (RED.validators.hasOwnProperty('typedInput')?RED.validators.typedInput('payloadType'):function(v) { return true})},\n            payloadType: { value: 'str'},\n            topic:  {value: 'topic', validate: (RED.validators.hasOwnProperty('typedInput')?RED.validators.typedInput('topicType'):function(v) { return true})},\n            topicType: {value: 'msg'}\n        },\n        inputs:1,\n        outputs:1,\n        outputLabels: function() { if (this.payloadType === \"str\") {\n            return this.payload;\n        } else {return this.payloadType; } },\n        icon: \"ui_button.png\",\n        paletteLabel: 'button',\n        label: function() { return this.name || (~this.label.indexOf(\"{{\") ? null : this.label) || 'button'; },\n        labelStyle: function() { return this.name?\"node_label_italic\":\"\"; },\n        oneditprepare: function() {\n            $(\"#node-input-size\").elementSizer({\n                width: \"#node-input-width\",\n                height: \"#node-input-height\",\n                group: \"#node-input-group\"\n            });\n            $('#node-input-payload').typedInput({\n                default: 'str',\n                typeField: $(\"#node-input-payloadType\"),\n                types: ['str','num','bool','json','bin','date','flow','global']\n            });\n            $('#node-input-topic').typedInput({\n                default: 'str',\n                typeField: $(\"#node-input-topicType\"),\n                types: ['str','msg','flow','global']\n            });\n        }\n    });\n</script>\n\n<script type=\"text/html\" data-template-name=\"ui_button\">\n    <div class=\"form-row\">\n        <label for=\"node-input-group\"><i class=\"fa fa-table\"></i> <span data-i18n=\"ui_button.label.group\"></label>\n        <input type=\"text\" id=\"node-input-group\">\n    </div>\n    <div class=\"form-row\">\n        <label><i class=\"fa fa-object-group\"></i> <span data-i18n=\"ui_button.label.size\"></label>\n        <input type=\"hidden\" id=\"node-input-width\">\n        <input type=\"hidden\" id=\"node-input-height\">\n        <button class=\"editor-button\" id=\"node-input-size\"></button>\n    </div>\n    <div class=\"form-row\">\n        <label for=\"node-input-icon\"><i class=\"fa fa-picture-o\"></i> <span data-i18n=\"ui_button.label.icon\"></label>\n        <input type=\"text\" id=\"node-input-icon\" data-i18n=\"[placeholder]ui_button.label.optionalIcon\">\n    </div>\n    <div class=\"form-row\">\n        <label for=\"node-input-label\"><i class=\"fa fa-i-cursor\"></i> <span data-i18n=\"ui_button.label.label\"></label>\n        <input type=\"text\" id=\"node-input-label\" data-i18n=\"[placeholder]ui_button.label.optionalLabel\">\n    </div>\n    <div class=\"form-row\">\n        <label for=\"node-input-tooltip\"><i class=\"fa fa-info-circle\"></i> <span data-i18n=\"ui_button.label.tooltip\"></label>\n        <input type=\"text\" id=\"node-input-tooltip\" data-i18n=\"[placeholder]ui_button.label.optionalTooltip\">\n    </div>\n    <div class=\"form-row\">\n        <label for=\"node-input-color\"><i class=\"fa fa-tint\"></i> <span data-i18n=\"ui_button.label.color\"></label>\n        <input type=\"text\" id=\"node-input-color\" data-i18n=\"[placeholder]ui_button.label.optionalColor\">\n    </div>\n    <div class=\"form-row\">\n        <label for=\"node-input-bgcolor\"><i class=\"fa fa-tint\"></i>  <span data-i18n=\"ui_button.label.background\"></label>\n        <input type=\"text\" id=\"node-input-bgcolor\" data-i18n=\"[placeholder]ui_button.label.optionalBackgroundColor\">\n    </div>\n    <div class=\"form-row\">\n        <label style=\"width:auto\" for=\"node-input-payload\"><i class=\"fa fa-envelope-o\"></i> <span data-i18n=\"ui_button.label.whenClicked\"></label>\n    </div>\n    <div class=\"form-row\">\n        <label for=\"node-input-payload\" style=\"padding-left: 25px; margin-right: -25px\"><span data-i18n=\"ui_button.label.payload\"></label>\n        <input type=\"text\" id=\"node-input-payload\" style=\"width:70%\">\n        <input type=\"hidden\" id=\"node-input-payloadType\">\n    </div>\n    <div class=\"form-row\">\n        <label for=\"node-input-topic\" style=\"padding-left: 25px; margin-right: -25px\"><span data-i18n=\"ui_button.label.topic\"></label>\n        <input type=\"text\" id=\"node-input-topic\">\n        <input type=\"hidden\" id=\"node-input-topicType\">\n    </div>\n    <div class=\"form-row\">\n        <label style=\"width:auto\" for=\"node-input-passthru\"><i class=\"fa fa-arrow-right\"></i> <span data-i18n=\"ui_button.label.emulateClick\"></label>\n        <input type=\"checkbox\" id=\"node-input-passthru\" style=\"display:inline-block; width:auto; vertical-align:top;\">\n    </div>\n    <div class=\"form-row\">\n        <label for=\"node-input-className\"><i class=\"fa fa-code\"></i>  <span data-i18n=\"ui_button.label.className\"></label>\n        <input type=\"text\" id=\"node-input-className\" data-i18n=\"[placeholder]ui_button.label.classNamePlaceholder\"/>\n    </div>\n    <div class=\"form-row\">\n        <label for=\"node-input-name\"><i class=\"fa fa-tag\"></i> <span data-i18n=\"node-red:common.label.name\"></label>\n        <input type=\"text\" id=\"node-input-name\" data-i18n=\"[placeholder]node-red:common.label.name\">\n    </div>\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "className": "",
-        "x": 420,
-        "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "7924867b9e5cf157",
         "type": "function",
         "z": "5f24aa4e2871644e",
@@ -5509,82 +5326,6 @@
         ],
         "icon": "font-awesome/fa-paint-brush",
         "l": false
-    },
-    {
-        "id": "7e5bcee059b35d17",
-        "type": "ui_button",
-        "z": "5f24aa4e2871644e",
-        "g": "c89dfd7b39e58204",
-        "name": "Update Values",
-        "group": "db61b86da332c370",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "label": "Update",
-        "tooltip": "Update Values",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 460,
-        "y": 280,
-        "wires": [
-            [
-                "6ee6b248169e1507"
-            ]
-        ]
-    },
-    {
-        "id": "d94fd18128536e35",
-        "type": "ui_button",
-        "z": "5f24aa4e2871644e",
-        "g": "c89dfd7b39e58204",
-        "name": "Generate Node",
-        "group": "db61b86da332c370",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Generate",
-        "tooltip": "Generate Node",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 460,
-        "y": 320,
-        "wires": [
-            [
-                "269fe2d1179dae6f"
-            ]
-        ]
-    },
-    {
-        "id": "3a9d0fbfb7af09ef",
-        "type": "ui_text",
-        "z": "5f24aa4e2871644e",
-        "g": "c89dfd7b39e58204",
-        "group": "a02f6c3045b20b82",
-        "order": 0,
-        "width": "6",
-        "height": "25",
-        "name": "Node Info",
-        "label": "Values",
-        "format": "{{msg.payload}}",
-        "layout": "col-center",
-        "className": "",
-        "x": 820,
-        "y": 280,
-        "wires": []
     },
     {
         "id": "6ee6b248169e1507",
@@ -5786,45 +5527,6 @@
         "l": false
     },
     {
-        "id": "bac6efc10068a50e",
-        "type": "ui_dropdown",
-        "z": "5f24aa4e2871644e",
-        "g": "452787930e527ffb",
-        "name": "node_inc_node_name",
-        "label": "node_inc_node_name",
-        "tooltip": "node_inc_node_name",
-        "place": "node_inc_node_name",
-        "group": "044e014e95573719",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Include Node Name",
-                "value": true,
-                "type": "bool"
-            },
-            {
-                "label": "Don't Include Node Name",
-                "value": false,
-                "type": "bool"
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 420,
-        "y": 60,
-        "wires": [
-            [
-                "70c3c37cab078d30"
-            ]
-        ]
-    },
-    {
         "id": "269fe2d1179dae6f",
         "type": "link out",
         "z": "5f24aa4e2871644e",
@@ -5960,5 +5662,316 @@
             ]
         ],
         "l": false
+    },
+    {
+        "id": "09839321370b1935",
+        "type": "ui_dropdown",
+        "z": "5f24aa4e2871644e",
+        "g": "452787930e527ffb",
+        "name": "License",
+        "label": "License Type",
+        "tooltip": "Please select a license",
+        "place": "Please select a license",
+        "group": "044e014e95573719",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "MIT License",
+                "value": "mit",
+                "type": "str"
+            },
+            {
+                "label": "other",
+                "value": "other",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 440,
+        "y": 100,
+        "wires": [
+            [
+                "5c1f72d478f91d7d"
+            ]
+        ]
+    },
+    {
+        "id": "bac6efc10068a50e",
+        "type": "ui_dropdown",
+        "z": "5f24aa4e2871644e",
+        "g": "452787930e527ffb",
+        "name": "node_inc_node_name",
+        "label": "node_inc_node_name",
+        "tooltip": "node_inc_node_name",
+        "place": "node_inc_node_name",
+        "group": "044e014e95573719",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Include Node Name",
+                "value": true,
+                "type": "bool"
+            },
+            {
+                "label": "Don't Include Node Name",
+                "value": false,
+                "type": "bool"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 420,
+        "y": 60,
+        "wires": [
+            [
+                "70c3c37cab078d30"
+            ]
+        ]
+    },
+    {
+        "id": "479370d2bf301a47",
+        "type": "ui_template",
+        "z": "5f24aa4e2871644e",
+        "d": true,
+        "group": "1ee5b5eee8fb372d",
+        "name": "Node Preview",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<script type=\"text/javascript\">\n    RED.nodes.registerType('ui_button',{\n        category: RED._(\"node-red-dashboard/ui_base:ui_base.label.category\"),\n        color: 'rgb(176, 223, 227)',\n        defaults: {\n            name: {value: ''},\n            group: {type: 'ui_group', required: true},\n            order: {value: 0},\n            width: {value: 0, validate: function(v) {\n                    var width = v||0;\n                    var currentGroup = $('#node-input-group').val()||this.group;\n                    var groupNode = RED.nodes.node(currentGroup);\n                    var valid = !groupNode || +width <= +groupNode.width;\n                    $(\"#node-input-size\").toggleClass(\"input-error\",!valid);\n                    return valid;\n                }\n            },\n            height: {value: 0},\n            passthru: {value: false},\n            label: {value: 'button'},\n            tooltip: {value: ''},\n            color: {value: ''},\n            bgcolor: {value: ''},\n            className: {value: ''},\n            icon: {value: ''},\n            payload: {value: '',validate: (RED.validators.hasOwnProperty('typedInput')?RED.validators.typedInput('payloadType'):function(v) { return true})},\n            payloadType: { value: 'str'},\n            topic:  {value: 'topic', validate: (RED.validators.hasOwnProperty('typedInput')?RED.validators.typedInput('topicType'):function(v) { return true})},\n            topicType: {value: 'msg'}\n        },\n        inputs:1,\n        outputs:1,\n        outputLabels: function() { if (this.payloadType === \"str\") {\n            return this.payload;\n        } else {return this.payloadType; } },\n        icon: \"ui_button.png\",\n        paletteLabel: 'button',\n        label: function() { return this.name || (~this.label.indexOf(\"{{\") ? null : this.label) || 'button'; },\n        labelStyle: function() { return this.name?\"node_label_italic\":\"\"; },\n        oneditprepare: function() {\n            $(\"#node-input-size\").elementSizer({\n                width: \"#node-input-width\",\n                height: \"#node-input-height\",\n                group: \"#node-input-group\"\n            });\n            $('#node-input-payload').typedInput({\n                default: 'str',\n                typeField: $(\"#node-input-payloadType\"),\n                types: ['str','num','bool','json','bin','date','flow','global']\n            });\n            $('#node-input-topic').typedInput({\n                default: 'str',\n                typeField: $(\"#node-input-topicType\"),\n                types: ['str','msg','flow','global']\n            });\n        }\n    });\n</script>\n\n<script type=\"text/html\" data-template-name=\"ui_button\">\n    <div class=\"form-row\">\n        <label for=\"node-input-group\"><i class=\"fa fa-table\"></i> <span data-i18n=\"ui_button.label.group\"></label>\n        <input type=\"text\" id=\"node-input-group\">\n    </div>\n    <div class=\"form-row\">\n        <label><i class=\"fa fa-object-group\"></i> <span data-i18n=\"ui_button.label.size\"></label>\n        <input type=\"hidden\" id=\"node-input-width\">\n        <input type=\"hidden\" id=\"node-input-height\">\n        <button class=\"editor-button\" id=\"node-input-size\"></button>\n    </div>\n    <div class=\"form-row\">\n        <label for=\"node-input-icon\"><i class=\"fa fa-picture-o\"></i> <span data-i18n=\"ui_button.label.icon\"></label>\n        <input type=\"text\" id=\"node-input-icon\" data-i18n=\"[placeholder]ui_button.label.optionalIcon\">\n    </div>\n    <div class=\"form-row\">\n        <label for=\"node-input-label\"><i class=\"fa fa-i-cursor\"></i> <span data-i18n=\"ui_button.label.label\"></label>\n        <input type=\"text\" id=\"node-input-label\" data-i18n=\"[placeholder]ui_button.label.optionalLabel\">\n    </div>\n    <div class=\"form-row\">\n        <label for=\"node-input-tooltip\"><i class=\"fa fa-info-circle\"></i> <span data-i18n=\"ui_button.label.tooltip\"></label>\n        <input type=\"text\" id=\"node-input-tooltip\" data-i18n=\"[placeholder]ui_button.label.optionalTooltip\">\n    </div>\n    <div class=\"form-row\">\n        <label for=\"node-input-color\"><i class=\"fa fa-tint\"></i> <span data-i18n=\"ui_button.label.color\"></label>\n        <input type=\"text\" id=\"node-input-color\" data-i18n=\"[placeholder]ui_button.label.optionalColor\">\n    </div>\n    <div class=\"form-row\">\n        <label for=\"node-input-bgcolor\"><i class=\"fa fa-tint\"></i>  <span data-i18n=\"ui_button.label.background\"></label>\n        <input type=\"text\" id=\"node-input-bgcolor\" data-i18n=\"[placeholder]ui_button.label.optionalBackgroundColor\">\n    </div>\n    <div class=\"form-row\">\n        <label style=\"width:auto\" for=\"node-input-payload\"><i class=\"fa fa-envelope-o\"></i> <span data-i18n=\"ui_button.label.whenClicked\"></label>\n    </div>\n    <div class=\"form-row\">\n        <label for=\"node-input-payload\" style=\"padding-left: 25px; margin-right: -25px\"><span data-i18n=\"ui_button.label.payload\"></label>\n        <input type=\"text\" id=\"node-input-payload\" style=\"width:70%\">\n        <input type=\"hidden\" id=\"node-input-payloadType\">\n    </div>\n    <div class=\"form-row\">\n        <label for=\"node-input-topic\" style=\"padding-left: 25px; margin-right: -25px\"><span data-i18n=\"ui_button.label.topic\"></label>\n        <input type=\"text\" id=\"node-input-topic\">\n        <input type=\"hidden\" id=\"node-input-topicType\">\n    </div>\n    <div class=\"form-row\">\n        <label style=\"width:auto\" for=\"node-input-passthru\"><i class=\"fa fa-arrow-right\"></i> <span data-i18n=\"ui_button.label.emulateClick\"></label>\n        <input type=\"checkbox\" id=\"node-input-passthru\" style=\"display:inline-block; width:auto; vertical-align:top;\">\n    </div>\n    <div class=\"form-row\">\n        <label for=\"node-input-className\"><i class=\"fa fa-code\"></i>  <span data-i18n=\"ui_button.label.className\"></label>\n        <input type=\"text\" id=\"node-input-className\" data-i18n=\"[placeholder]ui_button.label.classNamePlaceholder\"/>\n    </div>\n    <div class=\"form-row\">\n        <label for=\"node-input-name\"><i class=\"fa fa-tag\"></i> <span data-i18n=\"node-red:common.label.name\"></label>\n        <input type=\"text\" id=\"node-input-name\" data-i18n=\"[placeholder]node-red:common.label.name\">\n    </div>\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 420,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "27336cc5ed22aa96",
+        "type": "ui_colour_picker",
+        "z": "5f24aa4e2871644e",
+        "g": "452787930e527ffb",
+        "name": "",
+        "label": "Node Color",
+        "group": "d7803cdee2fde4e0",
+        "format": "hex",
+        "outformat": "string",
+        "showSwatch": true,
+        "showPicker": true,
+        "showValue": true,
+        "showHue": false,
+        "showAlpha": false,
+        "showLightness": true,
+        "square": "false",
+        "dynOutput": "false",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 450,
+        "y": 140,
+        "wires": [
+            [
+                "7924867b9e5cf157"
+            ]
+        ]
+    },
+    {
+        "id": "3d36b159e7510e8b",
+        "type": "ui_form",
+        "z": "5f24aa4e2871644e",
+        "g": "452787930e527ffb",
+        "name": "Form Values",
+        "label": "Node Data",
+        "group": "044e014e95573719",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Node Name",
+                "value": "node_name",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Node Description",
+                "value": "node_description",
+                "type": "multiline",
+                "required": false,
+                "rows": 3
+            },
+            {
+                "label": "Node Version",
+                "value": "node_version",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Author Name",
+                "value": "author_name",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Author Email",
+                "value": "author_email",
+                "type": "email",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Node Output Num",
+                "value": "node_outputnum",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Node Icon",
+                "value": "node_icon",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Github Handle",
+                "value": "github_handle",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Node Category",
+                "value": "node_category",
+                "type": "text",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "node_name": "",
+            "node_description": "",
+            "node_version": "",
+            "author_name": "",
+            "author_email": "",
+            "node_outputnum": "",
+            "node_icon": "",
+            "github_handle": "",
+            "node_category": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "clear",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 450,
+        "y": 180,
+        "wires": [
+            [
+                "14cc7ad07c43c209"
+            ]
+        ]
+    },
+    {
+        "id": "3a9d0fbfb7af09ef",
+        "type": "ui_text",
+        "z": "5f24aa4e2871644e",
+        "g": "c89dfd7b39e58204",
+        "group": "a02f6c3045b20b82",
+        "order": 0,
+        "width": "6",
+        "height": "25",
+        "name": "Node Info",
+        "label": "Values",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 820,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "7e5bcee059b35d17",
+        "type": "ui_button",
+        "z": "5f24aa4e2871644e",
+        "g": "c89dfd7b39e58204",
+        "name": "Update Values",
+        "group": "db61b86da332c370",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "Update",
+        "tooltip": "Update Values",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 460,
+        "y": 280,
+        "wires": [
+            [
+                "6ee6b248169e1507"
+            ]
+        ]
+    },
+    {
+        "id": "d94fd18128536e35",
+        "type": "ui_button",
+        "z": "5f24aa4e2871644e",
+        "g": "c89dfd7b39e58204",
+        "name": "Generate Node",
+        "group": "db61b86da332c370",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Generate",
+        "tooltip": "Generate Node",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 460,
+        "y": 320,
+        "wires": [
+            [
+                "269fe2d1179dae6f"
+            ]
+        ]
     }
 ]
