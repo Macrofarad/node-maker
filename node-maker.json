@@ -2532,9 +2532,7 @@
             "1d506b65823c19c3"
         ],
         "x": 334,
-        "y": 479,
-        "w": 612,
-        "h": 242
+        "y": 479
     },
     {
         "id": "f7ef02f3851523e9",
@@ -6171,5 +6169,64 @@
             ]
         ],
         "l": false
+    },
+    {
+        "id": "55939aa1f8ea89be",
+        "type": "node_maker_test",
+        "z": "5f24aa4e2871644e",
+        "name": "",
+        "test": "",
+        "testType": "str",
+        "x": 510,
+        "y": 1380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "78901fa3290bf2f9",
+        "type": "inject",
+        "z": "5f24aa4e2871644e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 280,
+        "y": 1380,
+        "wires": [
+            [
+                "55939aa1f8ea89be"
+            ]
+        ]
+    },
+    {
+        "id": "b9e9adbefea9a258",
+        "type": "debug",
+        "z": "5f24aa4e2871644e",
+        "name": "debug 70",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 1400,
+        "wires": []
     }
 ]
