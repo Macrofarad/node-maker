@@ -5127,7 +5127,7 @@
         "z": "5f24aa4e2871644e",
         "g": "a07817ed834df932",
         "name": "debug 65",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5350,7 +5350,7 @@
         "z": "5f24aa4e2871644e",
         "g": "a07817ed834df932",
         "name": "debug 67",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5369,7 +5369,7 @@
         "z": "5f24aa4e2871644e",
         "g": "a07817ed834df932",
         "name": "debug 68",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5931,5 +5931,67 @@
         "x": 740,
         "y": 1400,
         "wires": []
+    },
+    {
+        "id": "9f6aa355bf8a040c",
+        "type": "node_maker_test",
+        "z": "5f24aa4e2871644e",
+        "name": "",
+        "test": "",
+        "testType": "str",
+        "x": 690,
+        "y": 440,
+        "wires": [
+            [
+                "a999d9bc137d6652"
+            ]
+        ]
+    },
+    {
+        "id": "cfdfe6bb2385931f",
+        "type": "inject",
+        "z": "5f24aa4e2871644e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 500,
+        "y": 500,
+        "wires": [
+            [
+                "9f6aa355bf8a040c"
+            ]
+        ]
+    },
+    {
+        "id": "a999d9bc137d6652",
+        "type": "debug",
+        "z": "5f24aa4e2871644e",
+        "name": "debug 71",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 905,
+        "y": 440,
+        "wires": [],
+        "l": false
     }
 ]
