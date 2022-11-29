@@ -5977,7 +5977,7 @@
         "type": "function",
         "z": "5f24aa4e2871644e",
         "name": "exe test",
-        "func": "const commandToExecute = \"cd node_modules; ls\"\nconst RawCommandOutput = await RedUtil.exec.run(\"commandToExecute\", [], {}, true);\nnode.warn(RawCommandOutput);\nnode.done();",
+        "func": "const commandToExecute = \"cd node_modules && ls\"\nconst RawCommandOutput = await RedUtil.exec.run(\"commandToExecute\", [], {}, true);\nnode.warn(RawCommandOutput);\nnode.done();",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
