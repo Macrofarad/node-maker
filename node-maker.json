@@ -2856,17 +2856,6 @@
         "className": ""
     },
     {
-        "id": "1ee5b5eee8fb372d",
-        "type": "ui_group",
-        "name": "Preview",
-        "tab": "034dae3a6c64ba0c",
-        "order": 3,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
         "id": "db61b86da332c370",
         "type": "ui_group",
         "name": "Controls",
