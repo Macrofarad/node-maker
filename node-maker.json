@@ -5589,7 +5589,6 @@
         "id": "479370d2bf301a47",
         "type": "ui_template",
         "z": "5f24aa4e2871644e",
-        "d": true,
         "group": "1ee5b5eee8fb372d",
         "name": "Node Preview",
         "order": 0,
