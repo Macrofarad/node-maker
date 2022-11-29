@@ -5594,7 +5594,7 @@
         "order": 0,
         "width": 0,
         "height": 0,
-        "format": "#rcorners1 {\nborder-radius: 25px;\nbackground: #73AD21;\npadding: 20px;\nwidth: 200px;\nheight: 150px;\n}\n\n#rcorners2 {\nborder-radius: 25px;\nborder: 2px solid #73AD21;\npadding: 20px;\nwidth: 200px;\nheight: 150px;\n}\n\n#rcorners3 {\nborder-radius: 25px;\nbackground: url(paper.gif);\nbackground-position: left top;\nbackground-repeat: repeat;\npadding: 20px;\nwidth: 200px;\nheight: 150px;\n}",
+        "format": "<style>\n\n#rcorners1 {\nborder-radius: 25px;\nbackground: #73AD21;\npadding: 20px;\nwidth: 200px;\nheight: 150px;\n}\n\n#rcorners2 {\nborder-radius: 25px;\nborder: 2px solid #73AD21;\npadding: 20px;\nwidth: 200px;\nheight: 150px;\n}\n\n#rcorners3 {\nborder-radius: 25px;\nbackground: url(paper.gif);\nbackground-position: left top;\nbackground-repeat: repeat;\npadding: 20px;\nwidth: 200px;\nheight: 150px;\n}\n</style>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": false,
