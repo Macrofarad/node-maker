@@ -6038,8 +6038,8 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "node-preview-live",
-        "x": 820,
-        "y": 180,
+        "x": 1120,
+        "y": 200,
         "wires": [
             []
         ]
@@ -6048,14 +6048,14 @@
         "id": "6da995fa0901351c",
         "type": "function",
         "z": "5f24aa4e2871644e",
-        "name": "function 41",
+        "name": "Update Node Preview",
         "func": "const Template = \"\"+\n\"<!DOCTYPE HTML>\" +\n\"    <html>\" +\n\"        <head>\" +\n'            <meta charset=\"UTF-8\">' +\n\"                <style>\" +\n\"                    .webnots_quote {\" +\n\"                        background: \" + global.get(\"node-maker.runtime.node_color\") + \" none repeat scroll 0 0;\" +\n\"                    border-color: #ffffff;//match background for no border\" +\n\"                    border-style: inset;\" +\n\"                    border-width: 10px 10px 10px 10px;\" + //set to zero for no border\n\"                    color: #ffffff;\" + //text color\n                    //padding: 0px;\n\"                    font-size: smaller;\" + //font-size: 20px;\n\"                    font-family: monospace;\" +\n\"                    border-radius: 5px;\" +\n\"                    width: 200px;\" +\n\"                    height: 40px;\" +\n\"                    line-height: 40px;\" +\n\"                    text-align: center;\" +\n\"        }\" +\n\"                </style>\" +\n\n    '                <blockquote class=\"webnots_quote\">' + global.get(\"node-maker.runtime.node_name\") +'</blockquote>' +\n\"                <title>Node Preview</title>\"+\n\"        </head>\"+\n\"    </html>\";\n\nnode.warn(Template);\n\n//'+global.get(\"node - maker.runtime.node_color\")+'\n//\"+global.get(\"node - maker.runtime.node_color\")+\"\n\n\nRED.util.setMessageProperty(msg, \"template\", Template,true);\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1090,
+        "x": 1120,
         "y": 240,
         "wires": [
             [
