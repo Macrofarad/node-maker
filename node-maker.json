@@ -6083,5 +6083,34 @@
                 "a300dcdea3540ccf"
             ]
         ]
+    },
+    {
+        "id": "5902f3dc8458e042",
+        "type": "inject",
+        "z": "5f24aa4e2871644e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 300,
+        "y": 420,
+        "wires": [
+            [
+                "7e5bcee059b35d17"
+            ]
+        ]
     }
 ]
