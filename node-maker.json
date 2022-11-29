@@ -2453,12 +2453,11 @@
             "a027c6485da2dadc",
             "5f20c8788f37f104",
             "cc4cc17e606595c6",
-            "3753ea6294bc8820",
-            "cf7f9170617cfeca"
+            "3753ea6294bc8820"
         ],
-        "x": 294,
+        "x": 314,
         "y": 579,
-        "w": 642,
+        "w": 622,
         "h": 282
     },
     {
@@ -5101,29 +5100,6 @@
         "l": false
     },
     {
-        "id": "cf7f9170617cfeca",
-        "type": "function",
-        "z": "5f24aa4e2871644e",
-        "g": "a07817ed834df932",
-        "name": "exe test",
-        "func": "const NodeNamePrefix = \"node-red-contrib-\";\nconst NodeShortname = global.get(\"node-maker.runtime.node_name\") || \"node_red_example\";\nconst FullNodeName = NodeNamePrefix + NodeShortname;\n\nconst RawFolderData = await RedUtil.exec.run(\"pwd\", [], {}, true);\n//msg.node_folder = env.get('HOME') + '/.node-red/node_modules/node-red-' + msg.node_name + '/';\nconst NodeFolder = RawFolderData[\"stdout\"] + \"/node_modules/\" + FullNodeName + \"\";\nnode.warn(NodeFolder);",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "RedUtil",
-                "module": "@node-red/util"
-            }
-        ],
-        "x": 380,
-        "y": 820,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "5f20c8788f37f104",
         "type": "debug",
         "z": "5f24aa4e2871644e",
@@ -6015,7 +5991,57 @@
         "x": 360,
         "y": 1000,
         "wires": [
-            []
+            [
+                "606399113d1d7b12"
+            ]
         ]
+    },
+    {
+        "id": "606399113d1d7b12",
+        "type": "debug",
+        "z": "5f24aa4e2871644e",
+        "name": "debug 72",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 495,
+        "y": 1000,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "3bea74c127d42461",
+        "type": "inject",
+        "z": "5f24aa4e2871644e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 225,
+        "y": 1000,
+        "wires": [
+            [
+                "9e435678ecf8e496"
+            ]
+        ],
+        "l": false
     }
 ]
