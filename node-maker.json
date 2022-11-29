@@ -6038,7 +6038,7 @@
         "fwdInMessages": true,
         "resendOnRefresh": false,
         "templateScope": "local",
-        "className": "",
+        "className": "node-preview-live",
         "x": 820,
         "y": 180,
         "wires": [
@@ -6059,7 +6059,7 @@
         "fwdInMessages": true,
         "resendOnRefresh": false,
         "templateScope": "local",
-        "className": "",
+        "className": "node-preview-dummy",
         "x": 820,
         "y": 140,
         "wires": [
