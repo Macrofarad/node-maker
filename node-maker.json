@@ -5589,6 +5589,7 @@
         "id": "479370d2bf301a47",
         "type": "ui_template",
         "z": "5f24aa4e2871644e",
+        "d": true,
         "group": "1ee5b5eee8fb372d",
         "name": "Node Preview",
         "order": 0,
@@ -6042,5 +6043,26 @@
             ]
         ],
         "l": false
+    },
+    {
+        "id": "a300dcdea3540ccf",
+        "type": "ui_template",
+        "z": "5f24aa4e2871644e",
+        "group": "1ee5b5eee8fb372d",
+        "name": "Node Preview",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<!DOCTYPE HTML>\n<html>\n\n<head>\n    <meta charset=\"UTF-8\">\n    <style>\n        .webnots_quote {\n            background: #c97e69 none repeat scroll 0 0;\n            border-color: #808080;\n            border-style: inset;\n            border-width: 0px 0px 0px 15px;\n            color: #ffffff;\n            font-size: 20px;\n            padding: 5px;\n            font-family: monospace;\n        }\n    </style>\n    \n    <blockquote class=\"webnots_quote\"><em>\"Node Preview\"</em></blockquote>\n    <title>Node Preview</title>\n</head>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 200,
+        "y": 460,
+        "wires": [
+            []
+        ]
     }
 ]
