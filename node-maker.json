@@ -5586,28 +5586,6 @@
         ]
     },
     {
-        "id": "479370d2bf301a47",
-        "type": "ui_template",
-        "z": "5f24aa4e2871644e",
-        "d": true,
-        "group": "1ee5b5eee8fb372d",
-        "name": "Node Preview",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "format": "<!DOCTYPE HTML>\n<html>\n\n<head>\n    <meta charset=\"UTF-8\">\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"../reset-meyer.css\">\n    <style type=\"text/css\">\n        body {\n            margin: 10px;//10px;\n            text-align: center;\n            //background: #cc0000;\n            font-family: \"Trebuchet MS\", Arial, Helvetica, sans-serif\n        }\n\n        #box1{\n            width: 200px;\n            height: 50px;\n            margin: 10px;\n            padding: 10px;\n            background: #cc0000;\n            border-radius: 2px;\n        }\n\n        #box1 {\n            background: #cc0000;\n            border-radius: 10px;\n        }\n\n        h2,\n        p {\n            //background: #cc0000;\n            padding: 0px;//padding: 5px;\n        }\n\n        #box1 p{\n            //background: #cc0000;\n            //white-space: pre;\n            font-size: smaller;\n            font-family: monospace;\n            \n        }\n    </style>\n    <title>Node Preview</title>\n</head>\n\n<body>\n    <div id=\"box1\">\n        <h2>Node Name</h2>\n    </div>\n</body>\n\n</html>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "className": "",
-        "x": 420,
-        "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "27336cc5ed22aa96",
         "type": "ui_colour_picker",
         "z": "5f24aa4e2871644e",
@@ -6059,8 +6037,8 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 200,
-        "y": 460,
+        "x": 400,
+        "y": 420,
         "wires": [
             []
         ]
