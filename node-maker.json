@@ -2421,11 +2421,14 @@
             "d94fd18128536e35",
             "6ee6b248169e1507",
             "3a9d0fbfb7af09ef",
-            "280532dc27a8c676"
+            "280532dc27a8c676",
+            "6da995fa0901351c",
+            "a300dcdea3540ccf",
+            "5902f3dc8458e042"
         ],
-        "x": 294,
-        "y": 239,
-        "w": 612,
+        "x": 284,
+        "y": 279,
+        "w": 802,
         "h": 122
     },
     {
@@ -5213,8 +5216,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 650,
-        "y": 280,
+        "x": 670,
+        "y": 320,
         "wires": [
             [
                 "3a9d0fbfb7af09ef"
@@ -5456,8 +5459,8 @@
             "c8cf2f473eaa51bc",
             "8876f3c040276cc2"
         ],
-        "x": 335,
-        "y": 280,
+        "x": 355,
+        "y": 320,
         "wires": [
             [
                 "7e5bcee059b35d17"
@@ -5733,8 +5736,8 @@
         "format": "{{msg.payload}}",
         "layout": "col-center",
         "className": "",
-        "x": 820,
-        "y": 280,
+        "x": 840,
+        "y": 320,
         "wires": []
     },
     {
@@ -5758,8 +5761,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 460,
-        "y": 280,
+        "x": 480,
+        "y": 320,
         "wires": [
             [
                 "6ee6b248169e1507",
@@ -5788,8 +5791,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 460,
-        "y": 320,
+        "x": 480,
+        "y": 360,
         "wires": [
             [
                 "269fe2d1179dae6f"
@@ -6026,6 +6029,7 @@
         "id": "a300dcdea3540ccf",
         "type": "ui_template",
         "z": "5f24aa4e2871644e",
+        "g": "c89dfd7b39e58204",
         "group": "d7803cdee2fde4e0",
         "name": "Node Preview",
         "order": 3,
@@ -6037,8 +6041,8 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "node-preview-live",
-        "x": 1120,
-        "y": 200,
+        "x": 980,
+        "y": 360,
         "wires": [
             []
         ]
@@ -6047,6 +6051,7 @@
         "id": "6da995fa0901351c",
         "type": "function",
         "z": "5f24aa4e2871644e",
+        "g": "c89dfd7b39e58204",
         "name": "Update Node Preview",
         "func": "const Template = \"\"+\n\"<!DOCTYPE HTML>\" +\n\"    <html>\" +\n\"        <head>\" +\n'            <meta charset=\"UTF-8\">' +\n\"                <style>\" +\n\"                    .webnots_quote {\" +\n\"                        background: \" + global.get(\"node-maker.runtime.node_color\") + \" none repeat scroll 0 0;\" +\n\"                    border-color: #ffffff;//match background for no border\" +\n\"                    border-style: inset;\" +\n\"                    border-width: 10px 10px 10px 10px;\" + //set to zero for no border\n\"                    color: #ffffff;\" + //text color\n                    //padding: 0px;\n\"                    font-size: smaller;\" + //font-size: 20px;\n\"                    font-family: monospace;\" +\n\"                    border-radius: 5px;\" +\n\"                    width: 200px;\" +\n\"                    height: 40px;\" +\n\"                    line-height: 40px;\" +\n\"                    text-align: center;\" +\n\"        }\" +\n\"                </style>\" +\n\n    '                <blockquote class=\"webnots_quote\">' + global.get(\"node-maker.runtime.node_name\") +'</blockquote>' +\n\"                <title>Node Preview</title>\"+\n\"        </head>\"+\n\"    </html>\";\n\nnode.warn(Template);\n\n//'+global.get(\"node - maker.runtime.node_color\")+'\n//\"+global.get(\"node - maker.runtime.node_color\")+\"\n\n\nRED.util.setMessageProperty(msg, \"template\", Template,true);\n\nreturn msg;",
         "outputs": 1,
@@ -6054,8 +6059,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1120,
-        "y": 240,
+        "x": 760,
+        "y": 360,
         "wires": [
             [
                 "a300dcdea3540ccf"
@@ -6066,6 +6071,7 @@
         "id": "5902f3dc8458e042",
         "type": "inject",
         "z": "5f24aa4e2871644e",
+        "g": "c89dfd7b39e58204",
         "name": "",
         "props": [
             {
@@ -6083,12 +6089,13 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 300,
-        "y": 420,
+        "x": 345,
+        "y": 360,
         "wires": [
             [
                 "7e5bcee059b35d17"
             ]
-        ]
+        ],
+        "l": false
     }
 ]
