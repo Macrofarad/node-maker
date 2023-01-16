@@ -2696,6 +2696,52 @@
         "h": 202
     },
     {
+        "id": "83bef3e1cb2302d8",
+        "type": "group",
+        "z": "5f24aa4e2871644e",
+        "style": {
+            "stroke": "rgba(68, 71, 90, 0.75)",
+            "stroke-opacity": "1",
+            "fill": "#21222c",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#f8f8f2"
+        },
+        "nodes": [
+            "9f6aa355bf8a040c",
+            "cfdfe6bb2385931f",
+            "a999d9bc137d6652"
+        ],
+        "x": 394,
+        "y": 459,
+        "w": 552,
+        "h": 82
+    },
+    {
+        "id": "5d636f095012aa2b",
+        "type": "group",
+        "z": "5f24aa4e2871644e",
+        "style": {
+            "stroke": "rgba(68, 71, 90, 0.75)",
+            "stroke-opacity": "1",
+            "fill": "#21222c",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#f8f8f2"
+        },
+        "nodes": [
+            "9e435678ecf8e496",
+            "606399113d1d7b12",
+            "3bea74c127d42461"
+        ],
+        "x": 984,
+        "y": 459,
+        "w": 392,
+        "h": 82
+    },
+    {
         "id": "d7e901b6cb4bab1b",
         "type": "junction",
         "z": "60de16a0fefb7ace",
@@ -5831,75 +5877,15 @@
         "l": false
     },
     {
-        "id": "55939aa1f8ea89be",
-        "type": "node_maker_test",
-        "z": "5f24aa4e2871644e",
-        "name": "",
-        "test": "",
-        "testType": "str",
-        "x": 510,
-        "y": 1380,
-        "wires": [
-            [
-                "b9e9adbefea9a258"
-            ]
-        ]
-    },
-    {
-        "id": "78901fa3290bf2f9",
-        "type": "inject",
-        "z": "5f24aa4e2871644e",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 280,
-        "y": 1380,
-        "wires": [
-            [
-                "55939aa1f8ea89be"
-            ]
-        ]
-    },
-    {
-        "id": "b9e9adbefea9a258",
-        "type": "debug",
-        "z": "5f24aa4e2871644e",
-        "name": "debug 70",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 740,
-        "y": 1400,
-        "wires": []
-    },
-    {
         "id": "9f6aa355bf8a040c",
         "type": "node_maker_test",
         "z": "5f24aa4e2871644e",
+        "g": "83bef3e1cb2302d8",
         "name": "",
         "test": "",
         "testType": "str",
         "x": 690,
-        "y": 440,
+        "y": 500,
         "wires": [
             [
                 "a999d9bc137d6652"
@@ -5910,6 +5896,7 @@
         "id": "cfdfe6bb2385931f",
         "type": "inject",
         "z": "5f24aa4e2871644e",
+        "g": "83bef3e1cb2302d8",
         "name": "",
         "props": [
             {
@@ -5939,6 +5926,7 @@
         "id": "a999d9bc137d6652",
         "type": "debug",
         "z": "5f24aa4e2871644e",
+        "g": "83bef3e1cb2302d8",
         "name": "debug 71",
         "active": true,
         "tosidebar": true,
@@ -5948,8 +5936,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 905,
-        "y": 440,
+        "x": 885,
+        "y": 500,
         "wires": [],
         "l": false
     },
@@ -5957,6 +5945,7 @@
         "id": "9e435678ecf8e496",
         "type": "function",
         "z": "5f24aa4e2871644e",
+        "g": "5d636f095012aa2b",
         "name": "exe test",
         "func": "const WorkingDirectory = await RedUtil.exec.run(\"pwd\", [], {}, true);\n\nconst commandToExecute = \"ls\";\nconst RawCommandOutput = await RedUtil.exec.run(commandToExecute, [], {}, true);\nnode.warn({\"commandToExecute\":commandToExecute,\"commandResult\":RawCommandOutput, \"pwd\":WorkingDirectory});\nnode.done();\n\n",
         "outputs": 1,
@@ -5969,8 +5958,8 @@
                 "module": "@node-red/util"
             }
         ],
-        "x": 360,
-        "y": 1000,
+        "x": 1180,
+        "y": 500,
         "wires": [
             [
                 "606399113d1d7b12"
@@ -5981,6 +5970,7 @@
         "id": "606399113d1d7b12",
         "type": "debug",
         "z": "5f24aa4e2871644e",
+        "g": "5d636f095012aa2b",
         "name": "debug 72",
         "active": true,
         "tosidebar": true,
@@ -5990,8 +5980,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 495,
-        "y": 1000,
+        "x": 1315,
+        "y": 500,
         "wires": [],
         "l": false
     },
@@ -5999,6 +5989,7 @@
         "id": "3bea74c127d42461",
         "type": "inject",
         "z": "5f24aa4e2871644e",
+        "g": "5d636f095012aa2b",
         "name": "",
         "props": [
             {
@@ -6016,8 +6007,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 225,
-        "y": 1000,
+        "x": 1045,
+        "y": 500,
         "wires": [
             [
                 "9e435678ecf8e496"
